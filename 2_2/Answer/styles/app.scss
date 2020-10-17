@@ -1,0 +1,259 @@
+html,body {
+  display: flex;
+  //overflow: hidden;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 0;
+  background-color: #808080;
+  font-family: sans-serif;
+}
+
+$pageWidth: calc((100%) - 10px);
+$titlesImage: linear-gradient(#fffc00, #FDC945, #FCBA10);
+
+.titleBar{
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  height: 70px;
+  width: $pageWidth;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 5px;
+  background-color: white;
+
+  .logo{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-left: 20px;
+  }
+  .call{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: flex-end;
+
+    margin-right: 20px;
+    font-weight: bold;
+  }
+}
+.menuBar{
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  height: 60px;
+  width: $pageWidth;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-image: linear-gradient(#EFF7F7, #AFBABE, #FBFBFB);
+
+  .menuItem{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    color: #818283;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 14px;
+
+  }
+  .menuBorder{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    height: 60%;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 25px;
+    margin-right: 25px;
+    border-left: 1px solid #818283;
+  }
+}
+
+.contentSpace{
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  height: auto;
+  width: $pageWidth;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../../images/background.png");
+
+  .content1{
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    .content1Item1{
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      height: 300px;
+      width: 40%;
+      justify-content: flex-start;
+      align-items: center;
+
+      margin-right: 10px;
+      margin-left: 50px;
+    }
+    .content1Item2{
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      height: 300px;
+      width: 60%;
+      justify-content: flex-start;
+      align-items: center;
+
+      margin-right: 50px;
+      margin-left: 10px;
+
+      .content1Item2Box{
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        height: 300px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to right,#A6A4A4,#161616);
+
+        .content1Item2BoxTitle{
+          display: flex;
+          overflow: hidden;
+          flex-direction: column;
+          height: 10%;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+
+          background-image: $titlesImage;
+        }
+        .content1Item2BoxDetail{
+          display: flex;
+          overflow: hidden;
+          flex-direction: column;
+          height: 90%;
+          width: 100%;
+          justify-content: center;
+          align-items: flex-start;
+
+          margin-left: 20px;
+          color: white;
+        }
+      }
+    }
+  }
+  .content2{
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+
+    color: #fb9a23;
+  }
+  .content3{
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+
+    .content3Item{
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      height: 300px;
+      width: 20%;
+      justify-content: center;
+      align-items: center;
+
+      margin-left: 10px;
+      margin-right: 10px;
+
+      background-color: white;
+      border: 2px solid black;
+
+      .content3Item1{
+        display: flex;
+        overflow: hidden;
+        flex-direction: row;
+        height: 10%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        border: 1px solid black;
+        background-image: $titlesImage;
+      }
+      .content3Item2{
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        height: 90%;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+
+        .content3Item3{
+          display: flex;
+          overflow: hidden;
+          flex-direction: column;
+          height: auto;
+          width: auto;
+          justify-content: center;
+          align-items: center;
+
+          align-self: flex-end;
+          #justify-self: flex-end;
+          align-content: flex-end;
+          margin-top: auto;
+          margin-bottom: 5px;
+
+          background-color: #FDC945;
+          border: 1px solid #161616 ;
+          margin-right: 3px;
+          padding: 3px;
+        }
+      }
+    }
+  }
+}

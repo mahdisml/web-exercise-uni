@@ -1,0 +1,116 @@
+html,body {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 0;
+  background-color: white;
+}
+.titleBar{
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  height: 100px;
+  width: calc((100%) - 10px);
+
+  margin-top: 5px;
+  background-color: #CCCCCC;
+}
+.title{
+  display: flex;
+  overflow:hidden;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-left: 30px;
+  color: black;
+  font-family: sans-serif;
+  font-size: 20pt;
+  font-weight: bold;
+}
+.menuBar{
+  display: flex;
+  overflow:hidden;
+  flex-direction: row;
+  height: 30px;
+  width: calc((100%) - 10px);
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+.menuItems{
+  display: flex;
+  overflow:hidden;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 1px;
+
+  background-color: #333333;
+
+  font-family: sans-serif;
+  font-size: 10pt;
+  color: white;
+
+}
+.menuEnd{
+  display: flex;
+  overflow:hidden;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #333333;
+}
+
+.inside{
+  display: flex;
+  overflow:hidden;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+}
+
+.leftContent{
+  display: flex;
+  overflow:hidden;
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-left: 30px;
+  font-family: sans-serif;
+  font-size: 10pt;
+}
+.rightContent{
+  display: flex;
+  overflow:hidden;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  font-family: sans-serif;
+  font-size: 10pt;
+}
