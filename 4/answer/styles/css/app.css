@@ -1,0 +1,64 @@
+/* our infrastructure =
+
+.class{
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  overflow: visible;
+  height: auto;
+  width: auto;
+
+}
+.subClass{
+
+  align-self: flex-start;
+
+}
+
+ */
+html, body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  overflow: visible;
+  height: auto;
+  width: 100%;
+}
+
+.menuBar .logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  overflow: visible;
+  height: auto;
+  width: auto;
+}
+.menuBar .menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  overflow: visible;
+  height: auto;
+  width: auto;
+}
+.menuBar .buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  overflow: visible;
+  height: auto;
+  width: auto;
+}
+
+/*# sourceMappingURL=app.css.map */

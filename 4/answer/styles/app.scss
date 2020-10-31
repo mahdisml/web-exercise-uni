@@ -36,12 +36,33 @@ html, body {
 .menuBar{
 
   .logo{
-
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+    overflow: visible;
+    height: auto;
+    width: auto;
   }
   .menu{
-
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+    overflow: visible;
+    height: auto;
+    width: auto;
   }
   .buttons{
-
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+    overflow: visible;
+    height: auto;
+    width: auto;
   }
 }
