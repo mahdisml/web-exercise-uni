@@ -22,9 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="khak bar saresh beshe">
+    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="js is shit">
+      <change afterPath="$PROJECT_DIR$/4/answer/styles/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4/answer/سازندگان.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5/6.js" beforeDir="false" afterPath="$PROJECT_DIR$/5/6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4/answer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4/question.png" beforeDir="false" afterPath="$PROJECT_DIR$/4/question.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +73,11 @@
       <recent name="F:\Term8\3_Web\web-exercise-uni\1_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.6.js">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="Project" type="FirefoxRemoteDebugType">
       <method v="2" />
     </configuration>
-    <configuration name="2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/5/2.js" working-dir="$PROJECT_DIR$/5">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web-exercise-uni/4/answer/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="3.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/5/3.js" working-dir="$PROJECT_DIR$/5">
@@ -91,19 +94,19 @@
     </configuration>
     <list>
       <item itemvalue="Firefox Remote.Project" />
-      <item itemvalue="Node.js.2.js" />
       <item itemvalue="Node.js.3.js" />
       <item itemvalue="Node.js.4.js" />
       <item itemvalue="Node.js.5.js" />
       <item itemvalue="Node.js.6.js" />
+      <item itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Node.js.6.js" />
         <item itemvalue="Node.js.5.js" />
         <item itemvalue="Node.js.4.js" />
         <item itemvalue="Node.js.3.js" />
-        <item itemvalue="Node.js.2.js" />
       </list>
     </recent_temporary>
   </component>
@@ -128,6 +131,8 @@
       <workItem from="1603876070227" duration="1611000" />
       <workItem from="1603888870271" duration="1432000" />
       <workItem from="1604025566826" duration="3817000" />
+      <workItem from="1604055916674" duration="705000" />
+      <workItem from="1604140075542" duration="5981000" />
     </task>
     <task id="LOCAL-00001" summary="first style">
       <created>1602265611155</created>
@@ -157,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603876224756</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="js is shit">
+      <created>1604056000615</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604056000615</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +192,8 @@
     <MESSAGE value="first series" />
     <MESSAGE value="series two" />
     <MESSAGE value="khak bar saresh beshe" />
-    <option name="LAST_COMMIT_MESSAGE" value="khak bar saresh beshe" />
+    <MESSAGE value="js is shit" />
+    <option name="LAST_COMMIT_MESSAGE" value="js is shit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="251" width="478" height="350" key="#File_Watchers" timestamp="1602617281506">
@@ -319,10 +332,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1602691994056" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1603876250168">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1604056017436">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1603876250168" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604056017436" />
     <state x="10" y="9" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602280858134">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
