@@ -19,6 +19,14 @@
 }
 
  */
+@font-face {
+  font-family: Vazir;
+  src: url("../../fonts/Vazir.ttf");
+}
+@font-face {
+  font-family: VazirBold;
+  src: url("../../fonts/Vazir-Bold.ttf");
+}
 html, body {
   display: flex;
   flex-flow: column nowrap;
@@ -28,8 +36,26 @@ html, body {
   overflow: visible;
   height: auto;
   width: 100%;
+  font-family: Vazir, sans-serif;
+  text-align: center;
 }
 
+.menuBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  overflow: visible;
+  height: auto;
+  width: 100%;
+  font-family: VazirBold, sans-serif;
+}
+@media only screen and (max-width: 800px) {
+  .menuBar {
+    flex-flow: column wrap;
+  }
+}
 .menuBar .logo {
   display: flex;
   flex-flow: row nowrap;
@@ -39,8 +65,27 @@ html, body {
   overflow: visible;
   height: auto;
   width: auto;
+  font-size: 20px;
+}
+.menuBar .logo .logoText1 {
+  color: #F81E1E;
 }
 .menuBar .menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  overflow: visible;
+  height: auto;
+  width: auto;
+}
+@media only screen and (max-width: 800px) {
+  .menuBar .menu {
+    flex-flow: column wrap;
+  }
+}
+.menuBar .menu .menuItem {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -49,6 +94,8 @@ html, body {
   overflow: visible;
   height: auto;
   width: auto;
+  margin-left: 17px;
+  margin-right: 17px;
 }
 .menuBar .buttons {
   display: flex;
