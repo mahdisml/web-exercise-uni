@@ -22,12 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="js is shit">
-      <change afterPath="$PROJECT_DIR$/4/answer/styles/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4/answer/سازندگان.txt" afterDir="false" />
+    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="Menu is 70% complete">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4/question.png" beforeDir="false" afterPath="$PROJECT_DIR$/4/question.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4/answer/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4/answer/styles/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/styles/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4/answer/styles/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/styles/css/app.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +71,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Term8\3_Web\web-exercise-uni\4\answer" />
+      <recent name="F:\Term8\3_Web\web-exercise-uni\4\answer\styles" />
       <recent name="F:\Term8\3_Web\web-exercise-uni\1_1" />
     </key>
   </component>
@@ -94,11 +97,11 @@
     </configuration>
     <list>
       <item itemvalue="Firefox Remote.Project" />
+      <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="Node.js.3.js" />
       <item itemvalue="Node.js.4.js" />
       <item itemvalue="Node.js.5.js" />
       <item itemvalue="Node.js.6.js" />
-      <item itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
       <list>
@@ -132,7 +135,8 @@
       <workItem from="1603888870271" duration="1432000" />
       <workItem from="1604025566826" duration="3817000" />
       <workItem from="1604055916674" duration="705000" />
-      <workItem from="1604140075542" duration="5981000" />
+      <workItem from="1604140075542" duration="12864000" />
+      <workItem from="1604318895212" duration="8502000" />
     </task>
     <task id="LOCAL-00001" summary="first style">
       <created>1602265611155</created>
@@ -169,7 +173,28 @@
       <option name="project" value="LOCAL" />
       <updated>1604056000615</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Start Of Project ! Allaho Akbar !">
+      <created>1604155533027</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604155533027</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Start Of Project ! Allaho Akbar !">
+      <created>1604156006285</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604156006285</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Menu is 70% complete">
+      <created>1604161778300</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604161778300</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +218,9 @@
     <MESSAGE value="series two" />
     <MESSAGE value="khak bar saresh beshe" />
     <MESSAGE value="js is shit" />
-    <option name="LAST_COMMIT_MESSAGE" value="js is shit" />
+    <MESSAGE value="Start Of Project ! Allaho Akbar !" />
+    <MESSAGE value="Menu is 70% complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu is 70% complete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="251" width="478" height="350" key="#File_Watchers" timestamp="1602617281506">
@@ -332,10 +359,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1602691994056" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1604056017436">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1604161784012">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604056017436" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604161784012" />
     <state x="10" y="9" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602280858134">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -356,10 +383,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="-39" y="287" width="1500" height="122" key="dock-window-4/0.0.1536.834@0.0.1536.834" timestamp="1603802683837" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1602700069168">
+    <state x="425" y="189" key="run.anything.popup" timestamp="1604158459272">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1602700069168" />
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1604158459272" />
     <state x="430" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603265867873">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
