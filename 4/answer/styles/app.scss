@@ -303,7 +303,24 @@ html, body {
     }
   }
 }
+@media only screen and (max-width: $portraitSize) {
+  .listOfNewArrivals{
+    flex-direction: column;
+    align-items: center;
+    .listOfNewArrivals-commodity__image{
+      width: 70%;
+      margin-left:auto;
+      margin-right:auto;
+    }
+  }
+}
 //xyz/////////////////// content3
+.gallery{
+  display: flex;
+  height: 70vh;
+  width: 100%;
+  flex-wrap: nowrap;
+}
 //xyz/////////////////// content4
 //xyz/////////////////// content5
 //xyz/////////////////// content6

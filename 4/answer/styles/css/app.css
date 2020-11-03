@@ -294,4 +294,22 @@ html, body {
   font-size: 10px !important;
 }
 
+@media only screen and (max-width: 885px) {
+  .listOfNewArrivals {
+    flex-direction: column;
+    align-items: center;
+  }
+  .listOfNewArrivals .listOfNewArrivals-commodity__image {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.gallery {
+  display: flex;
+  height: 70vh;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
 /*# sourceMappingURL=app.css.map */
