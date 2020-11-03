@@ -22,8 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="Menu is 70% complete">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="menu is complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/styles/app.scss" afterDir="false" />
@@ -136,7 +135,8 @@
       <workItem from="1604025566826" duration="3817000" />
       <workItem from="1604055916674" duration="705000" />
       <workItem from="1604140075542" duration="12864000" />
-      <workItem from="1604318895212" duration="8502000" />
+      <workItem from="1604318895212" duration="8818000" />
+      <workItem from="1604356007751" duration="7628000" />
     </task>
     <task id="LOCAL-00001" summary="first style">
       <created>1602265611155</created>
@@ -194,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604161778300</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="menu is complete">
+      <created>1604332474280</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604332474280</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +227,8 @@
     <MESSAGE value="js is shit" />
     <MESSAGE value="Start Of Project ! Allaho Akbar !" />
     <MESSAGE value="Menu is 70% complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menu is 70% complete" />
+    <MESSAGE value="menu is complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu is complete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="251" width="478" height="350" key="#File_Watchers" timestamp="1602617281506">
@@ -359,14 +367,18 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1602691994056" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1604161784012">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1604332482029">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604161784012" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604332482029" />
     <state x="10" y="9" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602280858134">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="10" y="9" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.834@0.0.1536.834" timestamp="1602280858134" />
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604361543634">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1604361543634" />
     <state x="256" y="567" width="217" height="256" key="dock-window-1" timestamp="1603801579429">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -387,10 +399,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1604158459272" />
-    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603265867873">
+    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1604364505723">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603265867873" />
+    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1604364505723" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -8,13 +8,17 @@
   align-items: flex-start;
   align-content: stretch;
   overflow: visible;
-  height: auto;
   width: auto;
+  height: auto;
 
 }
 .subClass{
 
   align-self: flex-start;
+
+}
+
+@media only screen and (max-width: $portraitSize) {
 
 }
 
@@ -30,7 +34,7 @@
 }
 
 $mainColor : #F81E1E;
-$portraitSize : 865px;
+$portraitSize : 885px;
 
 html, body {
   display: flex;
@@ -45,6 +49,8 @@ html, body {
   font-family: Vazir, sans-serif;
   text-align: center;
 }
+
+//xyz/////////////////// menu
 
 .menuBar{
   display: flex;
@@ -169,4 +175,109 @@ html, body {
       margin: 40px;
     }
   }
+
+
 }
+
+//xyz/////////////////// content1
+
+.content1{
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  overflow: hidden;
+  height: 710px;
+  width: 100%;
+  background-color: #F0F0F2;
+
+  @media only screen and (max-width: $portraitSize) {
+    flex-flow: column wrap;
+    height : auto;
+    padding-bottom: 100px;
+  }
+
+}
+.content1-1-image{
+  width: 38vw;
+  height: 44.5vw;
+
+  @media only screen and (max-width: $portraitSize) {
+    width: 50vw;
+    height: 58.6vw;
+  }
+}
+.content1-2{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: stretch;
+  overflow: visible;
+  width: 44vw;
+  height: auto;
+  @media only screen and (max-width: $portraitSize) {
+    align-items:center;
+  }
+}
+.content1-2-text1{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  overflow: visible;
+  width: auto;
+  height: auto;
+
+  color: #0B1C39;
+  font-size: 4vw;
+  font-family: VazirBold, sans-serif;
+  margin-right: 70px;
+
+  @media only screen and (max-width: $portraitSize) {
+    margin-right:0;
+  }
+}
+
+.content1-2-text2{
+  color: #2D2038;
+  direction: rtl;
+  margin-right: 70px;
+
+  @media only screen and (max-width: $portraitSize) {
+    margin-right:0;
+  }
+}
+.content1-2-text3{
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  overflow: hidden;
+
+  width: 7rem;
+  height: 2.8rem;
+  background-color: #4A4A4B;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  margin-top: 50px;
+
+}
+
+
+//xyz/////////////////// content2
+//xyz/////////////////// content3
+//xyz/////////////////// content4
+//xyz/////////////////// content5
+//xyz/////////////////// content6
+//xyz/////////////////// content7
+//xyz/////////////////// content8
+//xyz/////////////////// content9
+//xyz/////////////////// content10
+
+
