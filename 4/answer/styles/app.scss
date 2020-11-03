@@ -271,6 +271,38 @@ html, body {
 
 
 //xyz/////////////////// content2
+.content2{
+  width: 100%;
+  h2{
+    float: right;
+    margin: 1em;
+  }
+}
+.listOfNewArrivals{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .listOfNewArrivals-commodity{
+    display: flex;
+    flex-direction: column;
+    .listOfNewArrivals-commodity__image{
+      height: 60vh;
+      border-radius: 5px;
+      -webkit-box-shadow: 5px 5px 10px -2px #777;
+      -moz-box-shadow: 5px 5px 10px -2px #777;
+      box-shadow: 5px 5px 10px -2px #777;
+      margin-bottom: 2em;
+    }
+    .listOfNewArrivals-commodity__price{
+      color: #F81E1E;
+      margin-top: 0;
+      .toman{
+        font-size: 10px !important;
+      }
+    }
+  }
+}
 //xyz/////////////////// content3
 //xyz/////////////////// content4
 //xyz/////////////////// content5
