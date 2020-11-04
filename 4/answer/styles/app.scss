@@ -64,7 +64,7 @@ html, body {
   overflow: visible;
   height: auto;
   width: 100%;
-
+  padding-bottom: 7px;
   font-family: VazirBold, sans-serif;
 
   .logo{
@@ -234,7 +234,7 @@ html, body {
   color: #0B1C39;
   font-size: 4vw;
   font-family: VazirBold, sans-serif;
-  margin-right: 70px;
+  margin-right: 3vw;
 
   @media only screen and (max-width: $portraitSize) {
     margin-right:0;
@@ -244,7 +244,7 @@ html, body {
 .content1-2-text2{
   color: #2D2038;
   direction: rtl;
-  margin-right: 70px;
+  margin-right: 3vw;
 
   @media only screen and (max-width: $portraitSize) {
     margin-right:0;
@@ -266,7 +266,7 @@ html, body {
   font-size: 1.2em;
   text-decoration: none;
   margin-top: 50px;
-
+  margin-right: 3vw;
 }
 
 
