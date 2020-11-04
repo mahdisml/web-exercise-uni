@@ -267,6 +267,10 @@ html, body {
   text-decoration: none;
   margin-top: 50px;
   margin-right: 3vw;
+
+  @media only screen and (max-width: $portraitSize) {
+    margin-right:0;
+  }
 }
 
 

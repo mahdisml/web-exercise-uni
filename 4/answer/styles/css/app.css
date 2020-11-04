@@ -261,6 +261,11 @@ html, body {
   margin-top: 50px;
   margin-right: 3vw;
 }
+@media only screen and (max-width: 885px) {
+  .content1-2-text3 {
+    margin-right: 0;
+  }
+}
 
 .content2 {
   width: 100%;

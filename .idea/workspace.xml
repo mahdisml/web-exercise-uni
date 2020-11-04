@@ -22,7 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="content1 is done !">
+    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="content1 is fixed !">
+      <change afterPath="$PROJECT_DIR$/4/answer/todo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/styles/app.scss" afterDir="false" />
@@ -139,7 +140,7 @@
       <workItem from="1604356007751" duration="8585000" />
       <workItem from="1604431100674" duration="585000" />
       <workItem from="1604504857437" duration="69000" />
-      <workItem from="1604504948818" duration="2753000" />
+      <workItem from="1604504948818" duration="3126000" />
     </task>
     <task id="LOCAL-00001" summary="first style">
       <created>1602265611155</created>
@@ -211,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604364819823</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="content1 is fixed !">
+      <created>1604507742696</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604507742696</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +247,8 @@
     <MESSAGE value="Menu is 70% complete" />
     <MESSAGE value="menu is complete" />
     <MESSAGE value="content1 is done !" />
-    <option name="LAST_COMMIT_MESSAGE" value="content1 is done !" />
+    <MESSAGE value="content1 is fixed !" />
+    <option name="LAST_COMMIT_MESSAGE" value="content1 is fixed !" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="251" width="478" height="350" key="#File_Watchers" timestamp="1602617281506">
