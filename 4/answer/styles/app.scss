@@ -315,6 +315,7 @@ html, body {
   }
 }
 //xyz/////////////////// content3
+@media only screen and (min-width: $portraitSize){
 .gallery{
   display: flex;
   align-self: center;
@@ -325,9 +326,10 @@ html, body {
   img{
     margin: 0.5em;
     object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0px #777;
     -webkit-box-shadow: 2px 2px 5px 0px #777;
     -moz-box-shadow: 2px 2px 5px 0px #777;
-    box-shadow: 2px 2px 5px 0px #777;
   }
   .gallery__image1{
     height: 100%;
@@ -347,17 +349,25 @@ html, body {
   }
   .gallery__image4{
     height: 34vh;
-    // margin-top: 0;
   }
+}
 }
 @media only screen and (max-width: $portraitSize){
   .gallery{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
     img{
+      height: 30vh;
+      width: 90%;
+      margin: 1em;
+      border: 10px !important;
       object-fit: cover;
+      box-shadow: 1px 1px 4px 0px #777;
+      -webkit-box-shadow: 1px 1px 4px 0px #777;
+      -moz-box-shadow: 1px 1px 4px 0px #777;
     }
-    width: 90%;
   }
 }
 //xyz/////////////////// content4
