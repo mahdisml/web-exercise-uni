@@ -317,9 +317,48 @@ html, body {
 //xyz/////////////////// content3
 .gallery{
   display: flex;
+  align-self: center;
+  justify-content: center;
   height: 70vh;
   width: 100%;
   flex-wrap: nowrap;
+  img{
+    margin: 0.5em;
+    object-fit: cover;
+    -webkit-box-shadow: 2px 2px 5px 0px #777;
+    -moz-box-shadow: 2px 2px 5px 0px #777;
+    box-shadow: 2px 2px 5px 0px #777;
+  }
+  .gallery__image1{
+    height: 100%;
+    width: 50%;
+  }
+  .gallery__image2{
+    height: 70vh;
+    width: 25%;
+  }
+  .gallery__images{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery__image3{
+    height: 34vh;
+  }
+  .gallery__image4{
+    height: 34vh;
+    // margin-top: 0;
+  }
+}
+@media only screen and (max-width: $portraitSize){
+  .gallery{
+    display: flex;
+    flex-direction: column;
+    img{
+      object-fit: cover;
+    }
+    width: 90%;
+  }
 }
 //xyz/////////////////// content4
 //xyz/////////////////// content5
