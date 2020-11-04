@@ -360,5 +360,45 @@ html, body {
     -moz-box-shadow: 1px 1px 4px 0px #777;
   }
 }
+@media only screen and (min-width: 885px) {
+  .popularItems .popularItems__title h2 {
+    margin-bottom: 0.4em;
+  }
+  .popularItems .popularItems__title p {
+    color: #777;
+    font-size: 12px;
+    width: 50%;
+    text-align: center;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .popularItems .popularItems-items {
+    height: 100vh;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .popularItems .popularItems-items__item {
+    height: 50%;
+    display: flex;
+    flex-grow: 1;
+  }
+}
+@media only screen and (max-width: 885px) {
+  .popularItems .popularItems__title h2 {
+    margin-bottom: 0.4em;
+  }
+  .popularItems .popularItems__title p {
+    color: #777;
+    font-size: 12px;
+    width: 90%;
+    text-align: center;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
