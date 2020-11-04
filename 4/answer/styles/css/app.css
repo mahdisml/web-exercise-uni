@@ -1,28 +1,3 @@
-/* our infrastructure =
-
-.class{
-
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: stretch;
-  overflow: visible;
-  width: auto;
-  height: auto;
-
-}
-.subClass{
-
-  align-self: flex-start;
-
-}
-
-@media only screen and (max-width: $portraitSize) {
-
-}
-
- */
 @font-face {
   font-family: Vazir;
   src: url("../../fonts/Vazir.ttf");
@@ -268,36 +243,69 @@ html, body {
 }
 
 .content2 {
+  margin-top: 10em;
   width: 100%;
+  overflow: hidden;
 }
-.content2 h2 {
-  float: right;
-  margin: 1em;
+.content2 .content2-title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  font-family: VazirBold, sans-serif;
+  font-size: 25px;
+  margin-bottom: 5rem;
+  margin-right: 7vw;
+}
+@media only screen and (max-width: 885px) {
+  .content2 .content2-title {
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+
+.listOfNewArrivalsFather {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  overflow: visible;
+  width: auto;
+  height: auto;
+  padding-right: 7vw;
+  padding-left: 7vw;
+  margin-bottom: 100px;
 }
 
 .listOfNewArrivals {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  color: #444444;
+  font-family: VazirBold, sans-serif;
 }
 .listOfNewArrivals .listOfNewArrivals-commodity {
   display: flex;
   flex-direction: column;
 }
-.listOfNewArrivals .listOfNewArrivals-commodity .listOfNewArrivals-commodity__image {
-  height: 60vh;
-  border-radius: 5px;
-  -webkit-box-shadow: 5px 5px 10px -2px #777;
-  -moz-box-shadow: 5px 5px 10px -2px #777;
-  box-shadow: 5px 5px 10px -2px #777;
+
+.listOfNewArrivals-commodity__image {
+  width: 25vw;
+  height: 34vw;
   margin-bottom: 2em;
 }
-.listOfNewArrivals .listOfNewArrivals-commodity .listOfNewArrivals-commodity__price {
+
+.listOfNewArrivals-commodity__price {
   color: #F81E1E;
   margin-top: 0;
 }
-.listOfNewArrivals .listOfNewArrivals-commodity .listOfNewArrivals-commodity__price .toman {
+.listOfNewArrivals-commodity__price .toman {
   font-size: 10px !important;
 }
 
@@ -307,9 +315,8 @@ html, body {
     align-items: center;
   }
   .listOfNewArrivals .listOfNewArrivals-commodity__image {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 40vw;
+    height: 54vw;
   }
 }
 @media only screen and (min-width: 885px) {
@@ -320,14 +327,11 @@ html, body {
     height: 70vh;
     width: 100%;
     flex-wrap: nowrap;
+    margin-bottom: 100px;
   }
   .gallery img {
     margin: 0.5em;
     object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px 0px #777;
-    -webkit-box-shadow: 2px 2px 5px 0px #777;
-    -moz-box-shadow: 2px 2px 5px 0px #777;
   }
   .gallery .gallery__image1 {
     height: 100%;
@@ -355,6 +359,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: 100px;
   }
   .gallery img {
     height: 30vh;
@@ -362,9 +367,6 @@ html, body {
     margin: 1em;
     border: 10px !important;
     object-fit: cover;
-    box-shadow: 1px 1px 4px 0px #777;
-    -webkit-box-shadow: 1px 1px 4px 0px #777;
-    -moz-box-shadow: 1px 1px 4px 0px #777;
   }
 }
 @media only screen and (min-width: 885px) {
