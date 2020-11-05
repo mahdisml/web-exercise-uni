@@ -24,11 +24,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="Content1,2 is done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_1/Answer/styles/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/2_1/Answer/styles/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_2/Answer/styles/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/2_2/Answer/styles/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_3/Answer/styles/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/3_3/Answer/styles/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/styles/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/styles/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/styles/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/styles/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/styles/css/app.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +144,7 @@
       <workItem from="1604431100674" duration="585000" />
       <workItem from="1604504857437" duration="69000" />
       <workItem from="1604504948818" duration="36270000" />
+      <workItem from="1604611637218" duration="6754000" />
     </task>
     <task id="LOCAL-00001" summary="first style">
       <created>1602265611155</created>

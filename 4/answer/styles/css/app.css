@@ -307,6 +307,10 @@ html, body {
   margin-bottom: 5rem;
   margin-right: 7vw;
 }
+.content2 .content2-title h2 {
+  font-size: 25px;
+  font-weight: normal;
+}
 @media only screen and (max-width: 885px) {
   .content2 .content2-title {
     justify-content: center;
@@ -448,6 +452,7 @@ html, body {
 .popularItems__title-1 {
   font-family: VazirBold, sans-serif;
   font-size: 25px;
+  font-weight: normal;
 }
 
 .popularItems__title-2 {
@@ -584,15 +589,29 @@ html, body {
   color: gray;
 }
 
+.content6 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  overflow: visible;
+  width: auto;
+  height: auto;
+  margin-right: 7vw;
+  margin-left: 7vw;
+}
+
 .containerOfChoices {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 }
 .containerOfChoices .containerOfChoices-choice {
-  margin: 5em 0;
+  margin-top: 5em;
+  margin-bottom: 5em;
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -607,11 +626,18 @@ html, body {
   display: flex;
   flex-direction: column;
   width: 45%;
+  text-align: right;
+  justify-content: center;
 }
-.containerOfChoices .containerOfChoices-choice .containerOfChoices-choice__detail .containerOfChoices-choice__detail__titile {
-  font-weight: bold;
+.containerOfChoices .containerOfChoices-choice .containerOfChoices-choice__detail .containerOfChoices-choice__detail__title {
+  font-weight: normal;
   font-size: 2em;
   align-self: start;
+  font-family: VazirBold, sans-serif;
+  text-align: right;
+}
+.containerOfChoices .containerOfChoices-choice .containerOfChoices-choice__detail .containerOfChoices-choice__detail__title h2 {
+  font-weight: normal;
 }
 .containerOfChoices .containerOfChoices-choice .containerOfChoices-choice__detail .containerOfChoices-choice__detail__btn {
   background: #f81e1e;
@@ -624,8 +650,8 @@ html, body {
   padding: 20px 28px;
   display: inline-block;
   cursor: pointer;
-  margin-bottom: 0;
-  margin: 10px;
+  text-align: center;
+  margin-top: 20px;
 }
 .containerOfChoices .one {
   flex-direction: row-reverse;
@@ -650,10 +676,23 @@ html, body {
     align-self: center;
   }
 }
+.content7 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  overflow: visible;
+  width: auto;
+  height: auto;
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+
 .attributesWrapper {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
@@ -662,14 +701,18 @@ html, body {
   padding: 1em;
 }
 .attributesWrapper .attributesWrapper__method {
-  margin: 0 1em;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: start;
 }
 .attributesWrapper .attributesWrapper__method .attributesWrapper__method__img {
-  width: 2em;
+  width: 2.5em;
+  height: 2.5em;
 }
 .attributesWrapper .attributesWrapper__method .attributesWrapper__method__description {
   color: #d3d1d1;
@@ -685,10 +728,22 @@ html, body {
     text-align: center;
   }
 }
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  overflow: visible;
+  width: auto;
+  height: auto;
+  margin-right: 7vw;
+  margin-left: 7vw;
+  margin-top: 50px;
+}
 footer .footerWrapper {
   display: flex;
-  padding: 2em;
-  width: 80vw;
+  width: 100%;
   justify-content: space-between;
 }
 footer .footerWrapper .footerWrapper__timeZone {
@@ -744,6 +799,49 @@ footer .footerWrapper .footerWrapper__column .footerWrapper__column__links a {
   footer .footerWrapper .footerWrapper__column {
     align-items: flex-start;
   }
+}
+
+.copyright {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  overflow: visible;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.copyright1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  overflow: visible;
+  width: auto;
+  height: auto;
+  opacity: 40%;
+}
+
+.copyright2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  overflow: visible;
+  width: auto;
+  height: auto;
+}
+
+.copyright2-image {
+  width: 24px;
+  height: 24px;
+  opacity: 40%;
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=app.css.map */
