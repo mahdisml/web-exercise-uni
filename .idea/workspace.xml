@@ -22,13 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="Content1,2,3 is Done !">
+    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="content4 is 90% complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/styles/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/styles/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/styles/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/styles/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/styles/css/app.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4/answer/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +141,7 @@
       <workItem from="1604356007751" duration="8585000" />
       <workItem from="1604431100674" duration="585000" />
       <workItem from="1604504857437" duration="69000" />
-      <workItem from="1604504948818" duration="21554000" />
+      <workItem from="1604504948818" duration="32159000" />
     </task>
     <task id="LOCAL-00001" summary="first style">
       <created>1602265611155</created>
@@ -234,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604519539027</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="content4 is 90% complete">
+      <created>1604539782763</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1604539782763</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +271,8 @@
     <MESSAGE value="content1 is done !" />
     <MESSAGE value="content1 is fixed !" />
     <MESSAGE value="Content1,2,3 is Done !" />
-    <option name="LAST_COMMIT_MESSAGE" value="Content1,2,3 is Done !" />
+    <MESSAGE value="content4 is 90% complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="content4 is 90% complete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="251" width="478" height="350" key="#File_Watchers" timestamp="1602617281506">
@@ -407,18 +415,18 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1602691994056" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1604519610918">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1604539793447">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604519610918" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604539793447" />
     <state x="10" y="9" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604509487671">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="10" y="9" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.834@0.0.1536.834" timestamp="1604509487671" />
-    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604504995031">
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604579424030">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1604504995031" />
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1604579424030" />
     <state x="256" y="567" width="217" height="256" key="dock-window-1" timestamp="1603801579429">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

@@ -48,7 +48,7 @@ html, body {
   font-size: 20px;
 }
 .menuBar .logo .logoText1 {
-  color: #F81E1E;
+  color: #f81e1e;
 }
 .menuBar .menu {
   display: flex;
@@ -92,14 +92,14 @@ html, body {
   overflow: visible;
   height: auto;
   width: auto;
-  margin-left: 17px;
-  margin-right: 17px;
+  margin-left: 14px;
+  margin-right: 14px;
   margin-bottom: 25px;
 }
 @media only screen and (max-width: 885px) {
   .menuBar .menu .menuSpecialItem {
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 0;
   }
 }
 .menuBar .menu .menuItemText {
@@ -107,13 +107,14 @@ html, body {
   color: black;
 }
 .menuBar .menu .menuItemText:hover {
-  color: #F81E1E;
+  color: #f81e1e;
 }
 .menuBar .menuSpecialItemShape {
   border-radius: 5px;
   padding: 0 5px 0 5px;
-  background-color: #F81E1E;
+  background-color: #f81e1e;
   color: white;
+  margin-right: 90px;
 }
 .menuBar .buttons {
   display: flex;
@@ -159,6 +160,26 @@ html, body {
     flex-flow: column wrap;
     height: auto;
     padding-bottom: 100px;
+    background: linear-gradient(to left, #F0F0F2, #f0f0f2 40%, #e6e6e6 40%, #e6e6e6 60%, #F0F0F2 60%);
+  }
+}
+
+.content1-1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  overflow: visible;
+  width: auto;
+  height: 100%;
+  background: linear-gradient(to left, #F0F0F2, #F0F0F2 35%, #d2d2d2 35%, #d2d2d2 65%, #F0F0F2 65%);
+}
+@media only screen and (max-width: 885px) {
+  .content1-1 {
+    background: none;
+    flex-flow: column nowrap;
+    height: auto;
   }
 }
 
@@ -202,10 +223,32 @@ html, body {
   font-size: 4vw;
   font-family: VazirBold, sans-serif;
   margin-right: 3vw;
+  font-weight: normal;
+}
+.content1-2-text1 h2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  overflow: visible;
+  width: auto;
+  height: auto;
+  color: #0B1C39;
+  font-size: 4vw;
+  font-family: VazirBold, sans-serif;
+  font-weight: normal;
+  text-align: right;
+}
+@media only screen and (max-width: 885px) {
+  .content1-2-text1 h2 {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 885px) {
   .content1-2-text1 {
     margin-right: 0;
+    text-align: center;
   }
 }
 
@@ -213,10 +256,12 @@ html, body {
   color: #2D2038;
   direction: rtl;
   margin-right: 3vw;
+  text-align: right;
 }
 @media only screen and (max-width: 885px) {
   .content1-2-text2 {
     margin-right: 0;
+    text-align: center;
   }
 }
 
@@ -294,6 +339,11 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (max-width: 885px) {
+  .listOfNewArrivals .listOfNewArrivals-commodity {
+    margin-bottom: 7em;
+  }
+}
 
 .listOfNewArrivals-commodity__image {
   width: 25vw;
@@ -302,7 +352,7 @@ html, body {
 }
 
 .listOfNewArrivals-commodity__price {
-  color: #F81E1E;
+  color: #f81e1e;
   margin-top: 0;
 }
 .listOfNewArrivals-commodity__price .toman {
@@ -401,6 +451,7 @@ html, body {
 
 .popularItems__title-2 {
   color: #444444;
+  width: 70vw;
 }
 
 .popularItems-items {
@@ -436,7 +487,13 @@ html, body {
 .popularItems-items__item .popularItems-items__image {
   width: 25vw;
   height: 32vw;
-  border-bottom: 3px solid #F81E1E;
+  border-bottom: 3px solid #f81e1e;
+}
+@media only screen and (max-width: 885px) {
+  .popularItems-items__item .popularItems-items__image {
+    width: 35vw;
+    height: 44.8vw;
+  }
 }
 .popularItems-items__item .popularItems-items__item-p1 {
   font-family: VazirBold, sans-serif;
@@ -444,6 +501,23 @@ html, body {
 }
 .popularItems-items__item .popularItems-items__item-p2 {
   color: #444444;
+}
+
+.content4-lastbutton {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  overflow: hidden;
+  height: 2.8rem;
+  background-color: #f81e1e;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  margin-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .containerOfChoices {
@@ -475,7 +549,7 @@ html, body {
   font-size: 2em;
 }
 .containerOfChoices .containerOfChoices-choice .containerOfChoices-choice__detail .containerOfChoices-choice__detail__btn {
-  background: #ff2020;
+  background: #f81e1e;
   align-self: flex-end;
   text-decoration: none;
   color: white;
@@ -562,7 +636,7 @@ footer .footerWrapper .footerWrapper__timeZone .footerWrapper__timeZone__title {
   font-weight: bold;
 }
 footer .footerWrapper .footerWrapper__timeZone .footerWrapper__timeZone__title .orange {
-  color: #F81E1E;
+  color: #f81e1e;
 }
 footer .footerWrapper .footerWrapper__timeZone .footerWrapper__timeZone__dis {
   color: gray;

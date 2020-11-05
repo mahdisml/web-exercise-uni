@@ -7,7 +7,7 @@
   src: url('../../fonts/Vazir-Bold.ttf');
 }
 
-$mainColor : #F81E1E;
+$mainColor : #f81e1e;
 $portraitSize : 885px;
 
 html, body {
@@ -96,12 +96,12 @@ html, body {
       height: auto;
       width: auto;
 
-      margin-left: 17px;
-      margin-right: 17px;
+      margin-left: 14px;
+      margin-right: 14px;
       margin-bottom: 25px;
       @media only screen and (max-width: $portraitSize) {
         margin-bottom: 10px;
-        margin-top: 10px;
+        margin-top: 0;
       }
     }
 
@@ -118,6 +118,7 @@ html, body {
     padding: 0 5px 0 5px;
     background-color: $mainColor;
     color: white;
+    margin-right: 90px;
   }
   .buttons{
     display: flex;
@@ -167,18 +168,47 @@ html, body {
     flex-flow: column wrap;
     height : auto;
     padding-bottom: 100px;
+    background: linear-gradient(to left,
+            #F0F0F2,
+            #f0f0f2 40%,
+            #e6e6e6 40%,
+            #e6e6e6 60%,
+            #F0F0F2 60% );
+  }
+
+}
+.content1-1{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  overflow: visible;
+  width: auto;
+  height: 100%;
+  background: linear-gradient(to left,
+          #F0F0F2,
+          #F0F0F2 35%,
+          #d2d2d2 35%,
+          #d2d2d2 65%,
+          #F0F0F2 65% );
+  //border: 1rem solid black;
+  @media only screen and (max-width: $portraitSize) {
+    background: none;
+    flex-flow: column nowrap;
+    height: auto;
   }
 
 }
 .content1-1-image{
   width: 38vw;
   height: 44.5vw;
-
   @media only screen and (max-width: $portraitSize) {
     width: 50vw;
     height: 58.6vw;
   }
 }
+
 .content1-2{
   display: flex;
   flex-flow: column nowrap;
@@ -206,9 +236,30 @@ html, body {
   font-size: 4vw;
   font-family: VazirBold, sans-serif;
   margin-right: 3vw;
+  font-weight: normal;
 
+  h2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+    overflow: visible;
+    width: auto;
+    height: auto;
+
+    color: #0B1C39;
+    font-size: 4vw;
+    font-family: VazirBold, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    @media only screen and (max-width: $portraitSize) {
+      text-align: center;
+    }
+  }
   @media only screen and (max-width: $portraitSize) {
     margin-right:0;
+    text-align: center;
   }
 }
 
@@ -216,9 +267,10 @@ html, body {
   color: #2D2038;
   direction: rtl;
   margin-right: 3vw;
-
+  text-align: right;
   @media only screen and (max-width: $portraitSize) {
     margin-right:0;
+    text-align: center;
   }
 }
 .content1-2-text3{
@@ -243,6 +295,7 @@ html, body {
     margin-right:0;
   }
 }
+
 
 
 //xyz/////////////////// content2
@@ -300,6 +353,9 @@ html, body {
   .listOfNewArrivals-commodity{
     display: flex;
     flex-direction: column;
+    @media only screen and (max-width: $portraitSize) {
+      margin-bottom: 7em;
+    }
   }
 }
 .listOfNewArrivals-commodity__image{
@@ -408,6 +464,7 @@ html, body {
 }
 .popularItems__title-2{
   color: #444444;
+  width: 70vw;
 }
 .popularItems-items{
   display: flex;
@@ -441,8 +498,11 @@ html, body {
   .popularItems-items__image{
     width: 25vw;
     height: 32vw;
-
     border-bottom: 3px solid $mainColor;
+    @media only screen and (max-width: $portraitSize) {
+      width: 35vw;
+      height: 44.8vw;
+    }
   }
 
   .popularItems-items__item-p1{
@@ -453,8 +513,29 @@ html, body {
     color: #444444;
   }
 }
+.content4-lastbutton{
 
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  overflow: hidden;
+
+  height: 2.8rem;
+  background-color: $mainColor;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  margin-top: 50px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
 //xyz/////////////////// content5
+
+
 //xyz/////////////////// content6
 .containerOfChoices{
   width: 90%;
@@ -482,7 +563,7 @@ html, body {
         font-size: 2em;
       }
       .containerOfChoices-choice__detail__btn{
-        background: #ff2020;
+        background: $mainColor;
         align-self: flex-end;
         text-decoration: none;
         color: white;
