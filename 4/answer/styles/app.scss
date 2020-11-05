@@ -623,10 +623,11 @@ html, body {
       .containerOfChoices-choice__detail__titile{
         font-weight: bold;
         font-size: 2em;
+        align-self: start;
       }
       .containerOfChoices-choice__detail__btn{
         background: $mainColor;
-        align-self: flex-end;
+        align-self: flex-start;
         text-decoration: none;
         color: white;
         width: 8em;

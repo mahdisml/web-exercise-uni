@@ -611,10 +611,11 @@ html, body {
 .containerOfChoices .containerOfChoices-choice .containerOfChoices-choice__detail .containerOfChoices-choice__detail__titile {
   font-weight: bold;
   font-size: 2em;
+  align-self: start;
 }
 .containerOfChoices .containerOfChoices-choice .containerOfChoices-choice__detail .containerOfChoices-choice__detail__btn {
   background: #f81e1e;
-  align-self: flex-end;
+  align-self: flex-start;
   text-decoration: none;
   color: white;
   width: 8em;
