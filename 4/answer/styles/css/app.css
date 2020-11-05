@@ -589,5 +589,19 @@ footer .footerWrapper .footerWrapper__column .footerWrapper__column__links a {
   color: gray;
   margin: 0.25em 0;
 }
+@media only screen and (max-width: 885px) {
+  footer .footerWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80vw;
+  }
+  footer .footerWrapper .footerWrapper__timeZone {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .footerWrapper .footerWrapper__column {
+    align-items: flex-start;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

@@ -599,6 +599,20 @@ footer{
       }
     }
   }
+  @media only screen and (max-width: $portraitSize){
+    .footerWrapper{
+      flex-direction: column;
+      align-items: flex-start;
+      width: 80vw;
+      .footerWrapper__timeZone{
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .footerWrapper__column{
+        align-items: flex-start;
+      }
+    }
+  }
 }
 //xyz/////////////////// content9
 //xyz/////////////////// content10
