@@ -446,10 +446,47 @@ html, body {
   color: #444444;
 }
 
-.containerOfChoices button {
-  background-color: #ff2020;
+.containerOfChoices {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.containerOfChoices .containerOfChoices-choice {
+  margin: 5em 0;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+.containerOfChoices .containerOfChoices-choice .containerOfChoices-choice__image {
+  width: 50%;
+  height: 50vh;
+  object-fit: cover;
+}
+.containerOfChoices .containerOfChoices-choice .containerOfChoices-choice__detail {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.containerOfChoices .containerOfChoices-choice .containerOfChoices-choice__detail .containerOfChoices-choice__detail__titile {
+  font-weight: bold;
+  font-size: 2em;
+}
+.containerOfChoices .containerOfChoices-choice .containerOfChoices-choice__detail .containerOfChoices-choice__detail__btn {
+  background: #ff2020;
+  align-self: flex-end;
+  text-decoration: none;
   color: white;
-  border: 0;
+  width: 8em;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 20px 28px;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 0;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */
