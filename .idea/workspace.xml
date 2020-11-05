@@ -22,26 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="content1 is fixed !">
-      <change afterPath="$PROJECT_DIR$/4/answer/images/watch7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4/answer/images/watch8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4/answer/images/watch9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ourInfrastructure.txt" afterDir="false" />
+    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="Content1,2,3 is Done !">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4/answer/images/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/images/search.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4/answer/images/shop.png" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/images/shop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4/answer/images/user.png" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/images/user.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4/answer/images/watch1.png" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/images/watch1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4/answer/images/watch2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/images/watch2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4/answer/images/watch3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/images/watch3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4/answer/images/watch4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/images/watch4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4/answer/images/watch5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/images/watch5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4/answer/images/watch6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/images/watch6.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/styles/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/styles/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/styles/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4/answer/styles/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/styles/css/app.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4/answer/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/4/answer/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4/answer/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +71,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Term8\3_Web\web-exercise-uni" />
       <recent name="F:\Term8\3_Web\web-exercise-uni\4\answer" />
       <recent name="F:\Term8\3_Web\web-exercise-uni\4\answer\styles" />
       <recent name="F:\Term8\3_Web\web-exercise-uni\1_1" />
@@ -153,7 +141,7 @@
       <workItem from="1604356007751" duration="8585000" />
       <workItem from="1604431100674" duration="585000" />
       <workItem from="1604504857437" duration="69000" />
-      <workItem from="1604504948818" duration="13493000" />
+      <workItem from="1604504948818" duration="21554000" />
     </task>
     <task id="LOCAL-00001" summary="first style">
       <created>1602265611155</created>
@@ -239,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604508099276</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Content1,2,3 is Done !">
+      <created>1604519539027</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1604519539027</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +263,8 @@
     <MESSAGE value="menu is complete" />
     <MESSAGE value="content1 is done !" />
     <MESSAGE value="content1 is fixed !" />
-    <option name="LAST_COMMIT_MESSAGE" value="content1 is fixed !" />
+    <MESSAGE value="Content1,2,3 is Done !" />
+    <option name="LAST_COMMIT_MESSAGE" value="Content1,2,3 is Done !" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="251" width="478" height="350" key="#File_Watchers" timestamp="1602617281506">
@@ -411,10 +407,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1602691994056" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1604508101870">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1604519610918">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604508101870" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604519610918" />
     <state x="10" y="9" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604509487671">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

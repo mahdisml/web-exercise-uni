@@ -369,45 +369,81 @@ html, body {
     object-fit: cover;
   }
 }
-@media only screen and (min-width: 885px) {
-  .popularItems .popularItems__title h2 {
-    margin-bottom: 0.4em;
-  }
-  .popularItems .popularItems__title p {
-    color: #777;
-    font-size: 12px;
-    width: 50%;
-    text-align: center;
-    margin-top: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .popularItems .popularItems-items {
-    height: 100vh;
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .popularItems .popularItems-items__item {
-    height: 50%;
-    display: flex;
-    flex-grow: 1;
-  }
+.content4 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  overflow: visible;
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.popularItems__title {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  overflow: visible;
+  width: auto;
+  height: auto;
+  margin-right: 7vw;
+  margin-left: 7vw;
+}
+
+.popularItems__title-1 {
+  font-family: VazirBold, sans-serif;
+  font-size: 25px;
+}
+
+.popularItems__title-2 {
+  color: #444444;
+}
+
+.popularItems-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-evenly;
+  overflow: visible;
+  width: auto;
+  height: auto;
+  margin-right: 7vw;
+  margin-left: 7vw;
 }
 @media only screen and (max-width: 885px) {
-  .popularItems .popularItems__title h2 {
-    margin-bottom: 0.4em;
+  .popularItems-items {
+    flex-flow: column nowrap;
   }
-  .popularItems .popularItems__title p {
-    color: #777;
-    font-size: 12px;
-    width: 90%;
-    text-align: center;
-    margin-top: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
+}
+
+.popularItems-items__item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: visible;
+  width: auto;
+  height: auto;
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+}
+.popularItems-items__item .popularItems-items__image {
+  width: 25vw;
+  height: 32vw;
+  border-bottom: 3px solid #F81E1E;
+}
+.popularItems-items__item .popularItems-items__item-p1 {
+  font-family: VazirBold, sans-serif;
+  font-size: 18px;
+}
+.popularItems-items__item .popularItems-items__item-p2 {
+  color: #444444;
 }
 
 /*# sourceMappingURL=app.css.map */
