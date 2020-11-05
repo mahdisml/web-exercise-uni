@@ -499,6 +499,27 @@ html, body {
       }
     }
   }
+  .one{
+    flex-direction: row-reverse;
+  }
+}
+@media only screen and (max-width: $portraitSize){
+  .containerOfChoices{
+    align-items: center;
+  .containerOfChoices-choice{
+    flex-direction: column;
+    align-items: center;
+    .containerOfChoices-choice__image{
+      width: 90%;
+    }
+    .containerOfChoices-choice__detail{
+      width: 90%;
+      align-items: center;
+      .containerOfChoices-choice__detail__btn{
+        align-self: center;
+      }
+    }
+  }}
 }
 //xyz/////////////////// content7
 //xyz/////////////////// content8

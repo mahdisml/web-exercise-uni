@@ -488,5 +488,28 @@ html, body {
   margin-bottom: 0;
   margin: 10px;
 }
+.containerOfChoices .one {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 885px) {
+  .containerOfChoices {
+    align-items: center;
+  }
+  .containerOfChoices .containerOfChoices-choice {
+    flex-direction: column;
+    align-items: center;
+  }
+  .containerOfChoices .containerOfChoices-choice .containerOfChoices-choice__image {
+    width: 90%;
+  }
+  .containerOfChoices .containerOfChoices-choice .containerOfChoices-choice__detail {
+    width: 90%;
+    align-items: center;
+  }
+  .containerOfChoices .containerOfChoices-choice .containerOfChoices-choice__detail .containerOfChoices-choice__detail__btn {
+    align-self: center;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
