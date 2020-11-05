@@ -596,6 +596,9 @@ html, body {
 
 }
 //xyz/////////////////// content6
+.containerOfChoices-choice__detail__dis{
+  color: gray;
+}
 .containerOfChoices{
   width: 90%;
   display: flex;
@@ -607,16 +610,16 @@ html, body {
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     .containerOfChoices-choice__image{
-      width: 50%;
+      width: 45%;
       height: 50vh;
       object-fit: cover;
     }
     .containerOfChoices-choice__detail{
       display: flex;
       flex-direction: column;
-      width: 50%;
+      width: 45%;
       .containerOfChoices-choice__detail__titile{
         font-weight: bold;
         font-size: 2em;
