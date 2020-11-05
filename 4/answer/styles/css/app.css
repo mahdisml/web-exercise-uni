@@ -587,6 +587,7 @@ footer .footerWrapper .footerWrapper__column .footerWrapper__column__links {
 footer .footerWrapper .footerWrapper__column .footerWrapper__column__links a {
   text-decoration: none;
   color: gray;
+  margin: 0.25em 0;
 }
 
 /*# sourceMappingURL=app.css.map */
