@@ -15,6 +15,7 @@ html, body {
   overflow: visible;
   height: auto;
   width: 100%;
+  overflow-x: hidden;
   font-family: Vazir, sans-serif;
   text-align: center;
 }
