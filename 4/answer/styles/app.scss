@@ -676,6 +676,9 @@ html, body {
     flex-direction: column;
     align-items: flex-start;
     text-align: start;
+    .attributesWrapper__method__img{
+      width: 2em;
+    }
     .attributesWrapper__method__description{
       color: #d3d1d1;
     }
