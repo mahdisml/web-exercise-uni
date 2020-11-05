@@ -49,9 +49,7 @@ html, body {
     overflow: visible;
     height: auto;
     width: auto;
-
     font-size: 20px;
-
     .logoText1{
       color: $mainColor;
     }
@@ -525,7 +523,6 @@ html, body {
 .attributesWrapper{
   display: flex;
   flex-direction: row;
-  flex: 1;
   width: 80%;
   justify-content: space-between;
   margin-left: auto;
@@ -555,6 +552,53 @@ html, body {
   }
 }
 //xyz/////////////////// content8
+footer{
+  .footerWrapper{
+    display: flex;
+    padding: 2em;
+    width: 80vw;
+    justify-content: space-between;
+    .footerWrapper__timeZone{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: start;
+      margin-left: 2em;
+      .footerWrapper__timeZone__title{
+        font-size: 20px;
+        font-weight: bold;
+        .orange{
+          color: $mainColor;
+        }
+      }
+      .footerWrapper__timeZone__dis{
+        color: gray;
+        margin-top: 0;
+        text-align: start;
+      }
+    }
+    .footerWrapper__column{
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      .footerWrapper__column__titile{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .footerWrapper__column__links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        a{
+          text-decoration: none;
+          color: gray;
+        }
+      }
+    }
+  }
+}
 //xyz/////////////////// content9
 //xyz/////////////////// content10
 
