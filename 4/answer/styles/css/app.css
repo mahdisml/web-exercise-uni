@@ -530,6 +530,9 @@ html, body {
   align-items: flex-start;
   text-align: start;
 }
+.attributesWrapper .attributesWrapper__method .attributesWrapper__method__description {
+  color: #d3d1d1;
+}
 
 @media only screen and (max-width: 885px) {
   .attributesWrapper {
