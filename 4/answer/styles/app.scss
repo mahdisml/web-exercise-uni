@@ -541,6 +541,16 @@ html, body {
     text-align: start;
   }
 }
+@media only screen and (max-width: $portraitSize){
+  .attributesWrapper{
+    flex-direction: column;
+    .attributesWrapper__method{
+      margin: 1em 0;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
 //xyz/////////////////// content8
 //xyz/////////////////// content9
 //xyz/////////////////// content10

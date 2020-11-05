@@ -531,4 +531,15 @@ html, body {
   text-align: start;
 }
 
+@media only screen and (max-width: 885px) {
+  .attributesWrapper {
+    flex-direction: column;
+  }
+  .attributesWrapper .attributesWrapper__method {
+    margin: 1em 0;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
