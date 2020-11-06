@@ -11,8 +11,23 @@ let cnt = -1;
 
 rl.on('line', function (line) {
 
-    if (cnt === -1){
+    function fibonacci(num) {
+        if (num <= 1) return 1;
 
+        return fibonacci(num - 1) + fibonacci(num - 2);
+    }
+
+    if (cnt === -1){
+        let n = parseInt(line);
+        if (n !== 0){
+            console.log(1);
+            if (n > 1) {
+                console.log(1);
+            }
+            for (let i = 2; i < n;i++){
+                console.log(fibonacci(i));
+        }
+        }
     }
 
 

@@ -22,15 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="END of Project1">
-      <change afterPath="$PROJECT_DIR$/6/1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6/2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6/3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6/4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6/5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6/6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6/baseInput.js" afterDir="false" />
+    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="6:1,2,3 is done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/6/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/6/5.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +74,7 @@
       <recent name="F:\Term8\3_Web\web-exercise-uni\1_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.3.js">
+  <component name="RunManager" selected="Node.js.5.js">
     <configuration name="Project" type="FirefoxRemoteDebugType">
       <method v="2" />
     </configuration>
@@ -92,27 +87,27 @@
     <configuration name="3.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/6/3.js" working-dir="$PROJECT_DIR$/6">
       <method v="2" />
     </configuration>
-    <configuration name="5.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/5/5.js" working-dir="$PROJECT_DIR$/5">
+    <configuration name="4.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/6/4.js" working-dir="$PROJECT_DIR$/6">
       <method v="2" />
     </configuration>
-    <configuration name="6.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/5/6.js" working-dir="$PROJECT_DIR$/5">
+    <configuration name="5.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/6/5.js" working-dir="$PROJECT_DIR$/6">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Firefox Remote.Project" />
       <item itemvalue="JavaScript Debug.index.html" />
-      <item itemvalue="Node.js.5.js" />
-      <item itemvalue="Node.js.6.js" />
       <item itemvalue="Node.js.1.js" />
       <item itemvalue="Node.js.3.js" />
+      <item itemvalue="Node.js.4.js" />
+      <item itemvalue="Node.js.5.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.5.js" />
+        <item itemvalue="Node.js.4.js" />
         <item itemvalue="Node.js.3.js" />
         <item itemvalue="Node.js.1.js" />
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="Node.js.6.js" />
-        <item itemvalue="Node.js.5.js" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +139,7 @@
       <workItem from="1604431100674" duration="585000" />
       <workItem from="1604504857437" duration="69000" />
       <workItem from="1604504948818" duration="36270000" />
-      <workItem from="1604611637218" duration="12114000" />
+      <workItem from="1604611637218" duration="16390000" />
     </task>
     <task id="LOCAL-00001" summary="first style">
       <created>1602265611155</created>
@@ -265,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604622652786</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="6:1,2,3 is done">
+      <created>1604665981577</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1604665981577</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +301,8 @@
     <MESSAGE value="Content1,2 is done" />
     <MESSAGE value="END is NEAR" />
     <MESSAGE value="END of Project1" />
-    <option name="LAST_COMMIT_MESSAGE" value="END of Project1" />
+    <MESSAGE value="6:1,2,3 is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="6:1,2,3 is done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="251" width="478" height="350" key="#File_Watchers" timestamp="1602617281506">
@@ -342,22 +345,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1515" height="84" key="GridCell.Tab.-1.right/0.0.1536.834@0.0.1536.834" timestamp="1603802504844" />
-    <state width="1515" height="153" key="GridCell.Tab.0.bottom" timestamp="1604665699233">
+    <state width="1515" height="153" key="GridCell.Tab.0.bottom" timestamp="1604673097740">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="153" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1604665699233" />
-    <state width="1515" height="153" key="GridCell.Tab.0.center" timestamp="1604665699232">
+    <state width="1515" height="153" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1604673097740" />
+    <state width="1515" height="153" key="GridCell.Tab.0.center" timestamp="1604673097740">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="153" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1604665699232" />
-    <state width="1515" height="153" key="GridCell.Tab.0.left" timestamp="1604665699232">
+    <state width="1515" height="153" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1604673097740" />
+    <state width="1515" height="153" key="GridCell.Tab.0.left" timestamp="1604673097740">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="153" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1604665699232" />
-    <state width="1515" height="153" key="GridCell.Tab.0.right" timestamp="1604665699233">
+    <state width="1515" height="153" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1604673097740" />
+    <state width="1515" height="153" key="GridCell.Tab.0.right" timestamp="1604673097740">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="153" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1604665699233" />
+    <state width="1515" height="153" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1604673097740" />
     <state width="1515" height="272" key="GridCell.Tab.1.bottom" timestamp="1604623664630">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -442,10 +445,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1602691994056" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1604622657440">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1604665988012">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604622657440" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604665988012" />
     <state x="10" y="9" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604509487671">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
