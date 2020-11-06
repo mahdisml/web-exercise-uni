@@ -10,34 +10,22 @@ let n;
 let data = [];
 
 /////////////////////////////////
-
-let allData = []
-let isDone = 0;
-let max = 1000000;
-
-function jam (number){
-    let value = number;
+function getSum(n)
+{
     let sum = 0;
-
-    while (value) {
-        sum += value % 10;
-        value = ~~(value / 10);
+    while (n !== 0)
+    {
+        sum = sum + n % 10;
+        n = n / 10;
     }
-    return number + sum
+    return sum;
 }
 
 function isOK(number){
-    if (isDone === 0) {
-        max = Math.max(...data);
-        let i = 1;
-        while(i < max){
-            allData.push(jam(i))
-            i = i + 1;
-        }
-        isDone = 1;
-    }
-    if (allData.includes(number)){
-        return "Yes";
+    for(let m = 1; m <= number; m++)
+    {
+        if (m + getSum(m) === number)
+            return "Yes";
     }
     return "No";
 }
@@ -57,8 +45,6 @@ rl.on('line', function (line) {
             }
             cnt = -1;
             data = [];
-            isDone = 0;
-            allData = []
         }
     }
 

@@ -17,18 +17,24 @@ rl.on('line', function (line) {
         return fibonacci(num - 1) + fibonacci(num - 2);
     }
 
-    if (cnt === -1){
-        let n = parseInt(line);
-        if (n !== 0){
-            console.log(1);
-            if (n > 1) {
-                console.log(1);
+    let x = 1;
+    let y = 1;
+    let z;
+    let n = parseInt(line);
+    if (n > 0 && n < 51) {
+        console.log(1)
+        if (n >1) {
+            console.log(1)
+            for (let i = 2; i < n; i++) {
+                z = x + y;
+                console.log(z);
+                x = parseInt(y);
+                y = parseInt(z);
+
             }
-            for (let i = 2; i < n;i++){
-                console.log(fibonacci(i));
-        }
         }
     }
+
 
 
 
