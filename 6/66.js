@@ -1,55 +1,43 @@
-var readline = require('readline');
-var rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-    terminal: false
-});
+function jaam(number) {
+    let result = 0;
+    while(number) {
 
-let cnt = -1;
-let n;
-let data = [];
+        result = result + number % 10;
+        number = parseInt(number / 10);
 
-/////////////////////////////////
-function getSum(n)
-{
-    let sum = 0;
-    while (n !== 0)
-    {
-        sum = sum + n % 10;
-        n = n / 10;
     }
-    return sum;
+    return result;
 }
-
-function isOK(number){
-    for(let m = 1; m <= number; m++)
-    {
-        if (m + getSum(m) === number)
-            return "Yes";
-    }
-    return "No";
-}
-
-//////////////////////////
-
-rl.on('line', function (line) {
-
-    if (cnt === -1){
-        n = parseInt(line)
-    }else {
-        data.push(parseInt(line))
-
-        if (cnt === n - 1){
-            for(let i = 0; i < data.length ; i++){
-                console.log(isOK(data[i]));
-            }
-            cnt = -1;
-            data = [];
+function isOk(number) {
+    if(number<=100) {
+        for(let i=0;i<=number;i++) {
+            if (allData[i] == number)
+                return "Yes";
         }
+        return "No";
     }
+    else{
+        for(let i=number-54;i<=number;i++) {
+            if (i + jaam(i) == number)
+                return "Yes";
+        }
+        return "No";
+    }
+}
 
-
-
-
-    cnt++;
-})
+allData=[]
+for(let i=1;i<101;i++) {
+    allData[i] = i + jaam(i);
+}
+let fs = require("fs");
+let {parse}=require("path");
+let stdinBuffer = fs.readFileSync(0);
+let lines = stdinBuffer.toString().split('\n');
+let n = parseInt(lines[0]);
+let allNumbers = [];
+for(let i=0;i<n;i++) {
+    allNumbers[i]=parseInt(lines[i+1]);
+}
+for(let i=0;i<n;i++) {
+    console.log(isOk(allNumbers[i]))
+}
