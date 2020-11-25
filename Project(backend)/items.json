@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "name": "ساعت درجه 1",
+      "price": 25,
+      "img": "images/watch12.jpg"
+    },
+    {
+      "name": "ساعت درجه 2",
+      "price": 25,
+      "img": "images/watch11.jpg"
+    },
+    {
+      "name": "ساعت درجه 3",
+      "price": 25,
+      "img": "images/watch10.jpg"
+    },
+    {
+      "name": "ساعت درجه 4",
+      "price": 25,
+      "img": "images/watch10.jpg"
+    },
+    {
+      "name": "ساعت درجه 5",
+      "price": 25,
+      "img": "images/watch12.jpg"
+    },
+    {
+      "name": "ساعت درجه 6",
+      "price": 25,
+      "img": "images/watch11.jpg"
+    }
+  ]
+}

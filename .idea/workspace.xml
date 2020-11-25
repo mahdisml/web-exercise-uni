@@ -22,11 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="PLEASE HELP !!!!!!">
+    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="VICTORY !">
+      <change afterPath="$PROJECT_DIR$/Project(backend)/items.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project(backend)/itemsDefault.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6/66.js" beforeDir="false" afterPath="$PROJECT_DIR$/6/66.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6/testjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/6/testjs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project(backend)/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project(backend)/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project(backend)/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project(backend)/public/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/public/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project(backend)/public/styles/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/public/styles/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project(backend)/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/views/main.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +63,11 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.2" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project(backend)" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -70,28 +76,31 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="liveEdit" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="F:\Program Files\JetBrains\WebStorm 203.5600.36\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Term8\3_Web\src\Project(backend)" />
       <recent name="F:\Term8\3_Web\src\6" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Term8\3_Web\src\Project(backend)\views" />
+      <recent name="F:\Term8\3_Web\src\Project(backend)\views\layouts" />
+      <recent name="F:\Term8\3_Web\src\Project(backend)\public" />
+      <recent name="F:\Term8\3_Web\src\Project(backend)" />
       <recent name="F:\Term8\3_Web\web-exercise-uni" />
-      <recent name="F:\Term8\3_Web\web-exercise-uni\4\answer" />
-      <recent name="F:\Term8\3_Web\web-exercise-uni\4\answer\styles" />
-      <recent name="F:\Term8\3_Web\web-exercise-uni\1_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.66.js">
+  <component name="RunManager" selected="Node.js.project3">
     <configuration name="Project" type="FirefoxRemoteDebugType">
       <method v="2" />
     </configuration>
     <configuration name="5.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/6/5.js" working-dir="$PROJECT_DIR$/6">
       <method v="2" />
     </configuration>
-    <configuration name="66.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/6/66.js" working-dir="$PROJECT_DIR$/6">
+    <configuration name="66.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="66.js" working-dir="$PROJECT_DIR$/6">
       <method v="2" />
     </configuration>
     <configuration name="6.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/6/6.js" working-dir="$PROJECT_DIR$/6">
@@ -100,11 +109,15 @@
     <configuration name="TT.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/6/TT.js" working-dir="$PROJECT_DIR$/6">
       <method v="2" />
     </configuration>
+    <configuration name="project3" type="NodeJSConfigurationType" path-to-js-file="Project(backend)/index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="testjs.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/6/testjs.js" working-dir="$PROJECT_DIR$/6">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Firefox Remote.Project" />
+      <item itemvalue="Node.js.project3" />
       <item itemvalue="Node.js.5.js" />
       <item itemvalue="Node.js.66.js" />
       <item itemvalue="Node.js.6.js" />
@@ -159,7 +172,9 @@
       <workItem from="1604759759019" duration="91000" />
       <workItem from="1604762570798" duration="10615000" />
       <workItem from="1605052733276" duration="8000" />
-      <workItem from="1605052896064" duration="1132000" />
+      <workItem from="1605052896064" duration="4654000" />
+      <workItem from="1606243727045" duration="14000" />
+      <workItem from="1606244230238" duration="14272000" />
     </task>
     <task id="LOCAL-00001" summary="first style">
       <created>1602265611155</created>
@@ -301,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604702322015</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="VICTORY !">
+      <created>1605054827545</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1605054827545</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +360,8 @@
     <MESSAGE value="6:1,2,3 is done" />
     <MESSAGE value="6:1,2,3,4 is done" />
     <MESSAGE value="PLEASE HELP !!!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="PLEASE HELP !!!!!!" />
+    <MESSAGE value="VICTORY !" />
+    <option name="LAST_COMMIT_MESSAGE" value="VICTORY !" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

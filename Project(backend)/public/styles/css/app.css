@@ -32,7 +32,7 @@ html, body {
   padding-bottom: 7px;
   font-family: VazirBold, sans-serif;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .menuBar {
     flex-flow: column wrap;
   }
@@ -61,7 +61,7 @@ html, body {
   height: auto;
   width: auto;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .menuBar .menu {
     flex-flow: column wrap;
   }
@@ -78,7 +78,7 @@ html, body {
   margin-left: 17px;
   margin-right: 17px;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .menuBar .menu .menuItem {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -97,7 +97,7 @@ html, body {
   margin-right: 14px;
   margin-bottom: 25px;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .menuBar .menu .menuSpecialItem {
     margin-bottom: 10px;
     margin-top: 0;
@@ -139,7 +139,7 @@ html, body {
   margin-left: 10px;
   margin-right: 10px;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .menuBar .buttonsItem {
     margin: 40px;
   }
@@ -156,7 +156,7 @@ html, body {
   width: 100%;
   background-color: #F0F0F2;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .content1 {
     flex-flow: column wrap;
     height: auto;
@@ -176,7 +176,7 @@ html, body {
   height: 100%;
   background: linear-gradient(to left, #F0F0F2, #F0F0F2 35%, #d2d2d2 35%, #d2d2d2 65%, #F0F0F2 65%);
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .content1-1 {
     background: none;
     flex-flow: column nowrap;
@@ -188,7 +188,7 @@ html, body {
   width: 38vw;
   height: 44.5vw;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .content1-1-image {
     width: 50vw;
     height: 58.6vw;
@@ -205,7 +205,7 @@ html, body {
   width: 44vw;
   height: auto;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .content1-2 {
     align-items: center;
   }
@@ -241,12 +241,12 @@ html, body {
   font-weight: normal;
   text-align: right;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .content1-2-text1 h2 {
     text-align: center;
   }
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .content1-2-text1 {
     margin-right: 0;
     text-align: center;
@@ -259,7 +259,7 @@ html, body {
   margin-right: 3vw;
   text-align: right;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .content1-2-text2 {
     margin-right: 0;
     text-align: center;
@@ -282,7 +282,7 @@ html, body {
   margin-top: 50px;
   margin-right: 3vw;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .content1-2-text3 {
     margin-right: 0;
   }
@@ -311,7 +311,7 @@ html, body {
   font-size: 25px;
   font-weight: normal;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .content2 .content2-title {
     justify-content: center;
     margin-right: 0;
@@ -344,7 +344,7 @@ html, body {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .listOfNewArrivals .listOfNewArrivals-commodity {
     margin-bottom: 7em;
   }
@@ -364,7 +364,7 @@ html, body {
   font-size: 10px !important;
 }
 
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .listOfNewArrivals {
     flex-direction: column;
     align-items: center;
@@ -374,7 +374,7 @@ html, body {
     height: 54vw;
   }
 }
-@media only screen and (min-width: 885px) {
+@media only screen and (min-width: 927px) {
   .gallery {
     display: flex;
     align-self: center;
@@ -408,7 +408,7 @@ html, body {
     height: 34vh;
   }
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .gallery {
     display: flex;
     flex-direction: column;
@@ -472,7 +472,7 @@ html, body {
   margin-right: 7vw;
   margin-left: 7vw;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .popularItems-items {
     flex-flow: column nowrap;
   }
@@ -495,7 +495,7 @@ html, body {
   height: 32vw;
   border-bottom: 3px solid #f81e1e;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .popularItems-items__item .popularItems-items__image {
     width: 35vw;
     height: 44.8vw;
@@ -657,7 +657,7 @@ html, body {
   flex-direction: row-reverse;
 }
 
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .containerOfChoices {
     align-items: center;
   }
@@ -718,7 +718,7 @@ html, body {
   color: #d3d1d1;
 }
 
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   .attributesWrapper {
     flex-direction: column;
   }
@@ -786,7 +786,7 @@ footer .footerWrapper .footerWrapper__column .footerWrapper__column__links a {
   color: gray;
   margin: 0.25em 0;
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 927px) {
   footer .footerWrapper {
     flex-direction: column;
     align-items: flex-start;

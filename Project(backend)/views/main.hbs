@@ -78,48 +78,50 @@
             <p class="popularItems__title-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
         </div>
         <div class="popularItems-items">
+            {{#each data.items}}
             <div class="popularItems-items__item">
-                <img class="popularItems-items__image" src="/images/watch10.jpg" alt="popularItems items image">
+                <img class="popularItems-items__image" src="{{this.img}}" alt="popularItems items image">
                 <div class="popularItems-items__info">
-                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>
-                    <p class="popularItems-items__item-p2">25 هزار تومان</p>
+                    <p class="popularItems-items__item-p1">{{this.name}}</p>
+                    <p class="popularItems-items__item-p2">{{this.price}} هزار تومان</p>
                 </div>
             </div>
-            <div class="popularItems-items__item">
-                <img class="popularItems-items__image" src="/images/watch11.jpg" alt="popularItems items image">
-                <div class="popularItems-items__info">
-                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>
-                    <p class="popularItems-items__item-p2">25 هزار تومان</p>
-                </div>
-            </div>
-            <div class="popularItems-items__item">
-                <img class="popularItems-items__image" src="/images/watch12.jpg" alt="popularItems items image">
-                <div class="popularItems-items__info">
-                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>
-                    <p class="popularItems-items__item-p2">25 هزار تومان</p>
-                </div>
-            </div>
-            <div class="popularItems-items__item">
-                <img class="popularItems-items__image" src="/images/watch11.jpg" alt="popularItems items image">
-                <div class="popularItems-items__info">
-                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>
-                    <p class="popularItems-items__item-p2">25 هزار تومان</p>
-                </div>
-            </div>
-            <div class="popularItems-items__item">
-                <img class="popularItems-items__image" src="/images/watch12.jpg" alt="popularItems items image">
-                <div class="popularItems-items__info">
-                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>
-                    <p class="popularItems-items__item-p2">25 هزار تومان</p>
-                </div>
-            </div>
-            <div class="popularItems-items__item">
-                <img class="popularItems-items__image" src="/images/watch10.jpg" alt="popularItems items image">
-                <div class="popularItems-items__info">
-                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>
-                    <p class="popularItems-items__item-p2">25 هزار تومان</p>
-                </div>
-            </div>
+            {{/each}}
+<!--            <div class="popularItems-items__item">-->
+<!--                <img class="popularItems-items__image" src="/images/watch11.jpg" alt="popularItems items image">-->
+<!--                <div class="popularItems-items__info">-->
+<!--                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>-->
+<!--                    <p class="popularItems-items__item-p2">25 هزار تومان</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="popularItems-items__item">-->
+<!--                <img class="popularItems-items__image" src="/images/watch12.jpg" alt="popularItems items image">-->
+<!--                <div class="popularItems-items__info">-->
+<!--                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>-->
+<!--                    <p class="popularItems-items__item-p2">25 هزار تومان</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="popularItems-items__item">-->
+<!--                <img class="popularItems-items__image" src="/images/watch11.jpg" alt="popularItems items image">-->
+<!--                <div class="popularItems-items__info">-->
+<!--                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>-->
+<!--                    <p class="popularItems-items__item-p2">25 هزار تومان</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="popularItems-items__item">-->
+<!--                <img class="popularItems-items__image" src="/images/watch12.jpg" alt="popularItems items image">-->
+<!--                <div class="popularItems-items__info">-->
+<!--                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>-->
+<!--                    <p class="popularItems-items__item-p2">25 هزار تومان</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="popularItems-items__item">-->
+<!--                <img class="popularItems-items__image" src="/images/watch10.jpg" alt="popularItems items image">-->
+<!--                <div class="popularItems-items__info">-->
+<!--                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>-->
+<!--                    <p class="popularItems-items__item-p2">25 هزار تومان</p>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     <a class="content4-lastbutton" href="/#">دیدن محصولات بیشتر</a>
 </section>
