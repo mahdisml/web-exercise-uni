@@ -16,167 +16,143 @@
     </div>
     <nav class="menu">
         <div class="menuItem"><a class="menuItemText" href="/#">خانه</a></div>
-        <div class="menuItem"><a class="menuItemText" href="/#">فروشگاه</a></div>
-        <div class="menuItem"><a class="menuItemText" href="/manageitem">مدیریت محصول</a></div>
+        <div class="menuItem"><a class="menuItemText" href="/forooshgah">فروشگاه</a></div>
+        <div class="menuItem"><a class="menuItemText" href="/modiriatMahsool">مدیریت محصول</a></div>
         <div class="menuSpecialItem">
-            <a class="menuItemText" href="/#">آخرین محصولات</a>
+            <a class="menuItemText" href="/akharinMahsool">آخرین محصولات</a>
             <div class="menuSpecialItemShape">داغ</div>
+
         </div>
-        <div class="menuItem"><a class="menuItemText" href="/#">بلاگ</a></div>
-        <div class="menuItem"><a class="menuItemText" href="/#">صفحه ها</a></div>
-        <div class="menuItem"><a class="menuItemText" href="/#">ارتباط با ما</a></div>
+        <div class="menuItem"><a class="menuItemText" href="/blog">بلاگ</a></div>
+        <div class="menuItem"><a class="menuItemText" href="/safheha">صفحه ها</a></div>
+        <div class="menuItem"><a class="menuItemText" href="/ertebatBaMa">ارتباط با ما</a></div>
     </nav>
     <div class="buttons">
-        <a href="/#"><img class="buttonsItem" src="/images/search.png" alt="search icon"/></a>
-        <a href="/#"><img class="buttonsItem" src="/images/user.png" alt="user icon"/></a>
-        <a href="/#"><img class="buttonsItem" src="/images/shop.png" alt="shop icon"/></a>
+        <a href="/search"><img class="buttonsItem" src="/images/search.png" alt="search icon"/></a>
+        <a href="/modiriatMahsool"><img class="buttonsItem" src="/images/user.png" alt="user icon"/></a>
+        <a href="/forooshgah"><img class="buttonsItem" src="/images/shop.png" alt="shop icon"/></a>
     </div>
 </header>
-<section class="content1">
-    <div class="content1-1"><img class="content1-1-image" src="/images/watch1.png" alt="watch1"></div>
-    <div class="content1-2">
-        <div class="content1-2-text1"><h2>استایل جدیدت رو انتخاب کن</h2></div>
-        <p class="content1-2-text2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است و اینکه چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
-        <a class="content1-2-text3" href="/#">خرید کن</a>
-    </div>
-</section>
-<section class="content2" dir="rtl">
-    <div class="content2-title"><h2>محصولات جدید</h2></div>
-    <div class="listOfNewArrivalsFather">
-        <div class="listOfNewArrivals">
-            <div class="listOfNewArrivals-commodity">
-                <img class="listOfNewArrivals-commodity__image" src="/images/watch7.jpg" alt="ساعت جدید">
-                <div class="listOfNewArrivals-commodity__title"><p>ساعت مدل یک</p></div>
-                <p class="listOfNewArrivals-commodity__price">۵۰۰۰ <span class="toman">تومان</span></p>
-            </div>
-            <div class="listOfNewArrivals-commodity">
-                <img class="listOfNewArrivals-commodity__image" src="/images/watch8.jpg" alt="ساعت جدید">
-                <div class="listOfNewArrivals-commodity__title"><p>ساعت مدل دو</p></div>
-                <p class="listOfNewArrivals-commodity__price">۵۰۰۰ <span class="toman">تومان</span></p>
-            </div>
-            <div class="listOfNewArrivals-commodity">
-                <img class="listOfNewArrivals-commodity__image" src="/images/watch9.jpg" alt="ساعت جدید">
-                <div class="listOfNewArrivals-commodity__title"><p>ساعت مدل سه</p></div>
-                <p class="listOfNewArrivals-commodity__price">۵۰۰۰ <span class="toman">تومان</span></p>
-            </div>
+{{#if (eq router 0)}}
+    <section class="content1">
+        <div class="content1-1"><img class="content1-1-image" src="/images/watch1.png" alt="watch1"></div>
+        <div class="content1-2">
+            <div class="content1-2-text1"><h2>استایل جدیدت رو انتخاب کن</h2></div>
+            <p class="content1-2-text2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است و اینکه چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+            <a class="content1-2-text3" href="/#">خرید کن</a>
         </div>
-    </div>
-</section>
-<section class="content3">
-    <div class="gallery">
-        <img class="gallery__image1" src="/images/watch3.jpg" alt="image1">
-        <img class="gallery__image2" src="/images/watch2.jpg" alt="image4">
-        <div class="gallery__images">
-            <img class="gallery__image3" src="/images/watch4.jpg" alt="image2">
-            <img class="gallery__image4" src="/images/watch5.jpg" alt="image3">
-        </div>
-    </div>
-</section>
-<section class="content4">
-        <div class="popularItems__title">
-            <h2 class="popularItems__title-1">آیتم‌های پرطرفدار</h2>
-            <p class="popularItems__title-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
-        </div>
-        <div class="popularItems-items">
-            {{#each data.items}}
-            <div class="popularItems-items__item">
-                <img class="popularItems-items__image" src="{{this.img}}" alt="popularItems items image">
-                <div class="popularItems-items__info">
-                    <p class="popularItems-items__item-p1">{{this.name}}</p>
-                    <p class="popularItems-items__item-p2">{{this.price}} هزار تومان</p>
+    </section>
+{{/if}}
+{{#if (or (eq router 0) (eq router 1) (eq router 3))}}
+    <section class="content2" dir="rtl">
+        <div class="content2-title"><h2>محصولات جدید</h2></div>
+        <div class="listOfNewArrivalsFather">
+            <div class="listOfNewArrivals">
+                <div class="listOfNewArrivals-commodity">
+                    <img class="listOfNewArrivals-commodity__image" src="/images/watch7.jpg" alt="ساعت جدید">
+                    <div class="listOfNewArrivals-commodity__title"><p>ساعت مدل یک</p></div>
+                    <p class="listOfNewArrivals-commodity__price">۵۰۰۰ <span class="toman">تومان</span></p>
+                </div>
+                <div class="listOfNewArrivals-commodity">
+                    <img class="listOfNewArrivals-commodity__image" src="/images/watch8.jpg" alt="ساعت جدید">
+                    <div class="listOfNewArrivals-commodity__title"><p>ساعت مدل دو</p></div>
+                    <p class="listOfNewArrivals-commodity__price">۵۰۰۰ <span class="toman">تومان</span></p>
+                </div>
+                <div class="listOfNewArrivals-commodity">
+                    <img class="listOfNewArrivals-commodity__image" src="/images/watch9.jpg" alt="ساعت جدید">
+                    <div class="listOfNewArrivals-commodity__title"><p>ساعت مدل سه</p></div>
+                    <p class="listOfNewArrivals-commodity__price">۵۰۰۰ <span class="toman">تومان</span></p>
                 </div>
             </div>
-            {{/each}}
-<!--            <div class="popularItems-items__item">-->
-<!--                <img class="popularItems-items__image" src="/images/watch11.jpg" alt="popularItems items image">-->
-<!--                <div class="popularItems-items__info">-->
-<!--                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>-->
-<!--                    <p class="popularItems-items__item-p2">25 هزار تومان</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="popularItems-items__item">-->
-<!--                <img class="popularItems-items__image" src="/images/watch12.jpg" alt="popularItems items image">-->
-<!--                <div class="popularItems-items__info">-->
-<!--                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>-->
-<!--                    <p class="popularItems-items__item-p2">25 هزار تومان</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="popularItems-items__item">-->
-<!--                <img class="popularItems-items__image" src="/images/watch11.jpg" alt="popularItems items image">-->
-<!--                <div class="popularItems-items__info">-->
-<!--                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>-->
-<!--                    <p class="popularItems-items__item-p2">25 هزار تومان</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="popularItems-items__item">-->
-<!--                <img class="popularItems-items__image" src="/images/watch12.jpg" alt="popularItems items image">-->
-<!--                <div class="popularItems-items__info">-->
-<!--                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>-->
-<!--                    <p class="popularItems-items__item-p2">25 هزار تومان</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="popularItems-items__item">-->
-<!--                <img class="popularItems-items__image" src="/images/watch10.jpg" alt="popularItems items image">-->
-<!--                <div class="popularItems-items__info">-->
-<!--                    <p class="popularItems-items__item-p1">ساعت درجه یک</p>-->
-<!--                    <p class="popularItems-items__item-p2">25 هزار تومان</p>-->
-<!--                </div>-->
-<!--            </div>-->
         </div>
-    <a class="content4-lastbutton" href="/#">دیدن محصولات بیشتر</a>
-</section>
-<section class="content5">
-    <video class="content5-video" controls>
-        <source src="/images/video.mp4" type="video/mp4">
-    </video>
-    <div class="content5-buttonDiv">
-        <a class="content5-button" href="/#">
-            <p>
-            ویدیو بعدی
-            </p>
-            <img class="content5-left" src="/images/left.png" alt="left arrow">
-        </a>
-    </div>
-</section>
-<section class="content6">
-    <div class="containerOfChoices">
-        <div class="containerOfChoices-choice one">
-            <img class="containerOfChoices-choice__image" src="/images/watch6.jpg" alt="">
-            <div class="containerOfChoices-choice__detail">
-                <h2 class="containerOfChoices-choice__detail__title">ساعت انتخابی</h2>
-                <p class="containerOfChoices-choice__detail__dis">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
-                <a class="containerOfChoices-choice__detail__btn" href="/#">نمایش ساعت‌ها</a>
+    </section>
+{{/if }}
+{{#if (eq router 0)}}
+    <section class="content3">
+        <div class="gallery">
+            <img class="gallery__image1" src="/images/watch3.jpg" alt="image1">
+            <img class="gallery__image2" src="/images/watch2.jpg" alt="image4">
+            <div class="gallery__images">
+                <img class="gallery__image3" src="/images/watch4.jpg" alt="image2">
+                <img class="gallery__image4" src="/images/watch5.jpg" alt="image3">
             </div>
         </div>
-        <div class="containerOfChoices-choice">
-            <img class="containerOfChoices-choice__image" src="/images/watch6.jpg" alt="">
-            <div class="containerOfChoices-choice__detail">
-                <h2 class="containerOfChoices-choice__detail__title">ساعت انتخابی</h2>
-                <p class="containerOfChoices-choice__detail__dis">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
-                <a class="containerOfChoices-choice__detail__btn" href="/#">نمایش ساعت‌ها</a>
+    </section>
+{{/if}}
+{{#if (or (eq router 0) (eq router 1) (eq router 2))}}
+    <section class="content4">
+            <div class="popularItems__title">
+                <h2 class="popularItems__title-1">آیتم‌های پرطرفدار</h2>
+                <p class="popularItems__title-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+            </div>
+            <div class="popularItems-items">
+                {{#each data.items}}
+                    <div class="popularItems-items__item">
+                        <img class="popularItems-items__image" src="{{this.img}}" alt="popularItems items image">
+                        <div class="popularItems-items__info">
+                            <p class="popularItems-items__item-p1">{{this.name}}</p>
+                            <p class="popularItems-items__item-p2">{{this.price}} هزار تومان</p>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        <a class="content4-lastbutton" href="/#">دیدن محصولات بیشتر</a>
+    </section>
+{{/if}}
+{{#if (eq router 0)}}
+    <section class="content5">
+        <video class="content5-video" controls>
+            <source src="/images/video.mp4" type="video/mp4">
+        </video>
+        <div class="content5-buttonDiv">
+            <a class="content5-button" href="/#">
+                <p>
+                ویدیو بعدی
+                </p>
+                <img class="content5-left" src="/images/left.png" alt="left arrow">
+            </a>
+        </div>
+    </section>
+    <section class="content6">
+        <div class="containerOfChoices">
+            <div class="containerOfChoices-choice one">
+                <img class="containerOfChoices-choice__image" src="/images/watch6.jpg" alt="">
+                <div class="containerOfChoices-choice__detail">
+                    <h2 class="containerOfChoices-choice__detail__title">ساعت انتخابی</h2>
+                    <p class="containerOfChoices-choice__detail__dis">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                    <a class="containerOfChoices-choice__detail__btn" href="/#">نمایش ساعت‌ها</a>
+                </div>
+            </div>
+            <div class="containerOfChoices-choice">
+                <img class="containerOfChoices-choice__image" src="/images/watch6.jpg" alt="">
+                <div class="containerOfChoices-choice__detail">
+                    <h2 class="containerOfChoices-choice__detail__title">ساعت انتخابی</h2>
+                    <p class="containerOfChoices-choice__detail__dis">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                    <a class="containerOfChoices-choice__detail__btn" href="/#">نمایش ساعت‌ها</a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="content7">
-    <div class="attributesWrapper">
-      <div class="attributesWrapper__method">
-          <img class="attributesWrapper__method__img" src="/images/1.svg" alt="icon">
-          <p class="attributesWrapper__method__tittle">ویژگی مورد نظر اول</p>
-          <p class="attributesWrapper__method__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
-      </div>
-      <div class="attributesWrapper__method">
-        <img class="attributesWrapper__method__img" src="/images/2.svg" alt="icon">
-        <p class="attributesWrapper__method__tittle">ویژگی مورد نظر دوم</p>
-        <p class="attributesWrapper__method__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
-    </div>
-    <div class="attributesWrapper__method">
-        <img class="attributesWrapper__method__img" src="/images/3.svg" alt="icon">
-        <p class="attributesWrapper__method__tittle">ویژگی مورد نظر سوم</p>
-        <p class="attributesWrapper__method__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
-    </div>
-    </div>
-</section>
+    </section>
+    <section class="content7">
+        <div class="attributesWrapper">
+          <div class="attributesWrapper__method">
+              <img class="attributesWrapper__method__img" src="/images/1.svg" alt="icon">
+              <p class="attributesWrapper__method__tittle">ویژگی مورد نظر اول</p>
+              <p class="attributesWrapper__method__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+          </div>
+          <div class="attributesWrapper__method">
+            <img class="attributesWrapper__method__img" src="/images/2.svg" alt="icon">
+            <p class="attributesWrapper__method__tittle">ویژگی مورد نظر دوم</p>
+            <p class="attributesWrapper__method__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+        </div>
+        <div class="attributesWrapper__method">
+            <img class="attributesWrapper__method__img" src="/images/3.svg" alt="icon">
+            <p class="attributesWrapper__method__tittle">ویژگی مورد نظر سوم</p>
+            <p class="attributesWrapper__method__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+        </div>
+        </div>
+    </section>
+{{/if}}
 <footer>
     <div class="footerWrapper">
         <div class="footerWrapper__timeZone">

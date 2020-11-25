@@ -155,6 +155,7 @@ html, body {
   height: 710px;
   width: 100%;
   background-color: #F0F0F2;
+  margin-bottom: 10em;
 }
 @media only screen and (max-width: 927px) {
   .content1 {
@@ -289,7 +290,6 @@ html, body {
 }
 
 .content2 {
-  margin-top: 10em;
   width: 100%;
   overflow: hidden;
 }

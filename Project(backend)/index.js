@@ -20,9 +20,25 @@ function updateJson(){
         console.log('Data written to file');
     });
 }
+const reduceOp = function(args, reducer){
+    args = Array.from(args);
+    args.pop(); // => options
+    var first = args.shift();
+    return args.reduce(reducer, first);
+};
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.engine('hbs', handlebars({
+    helpers: {
+        eq  : function(){ return reduceOp(arguments, (a,b) => a === b); },
+        ne  : function(){ return reduceOp(arguments, (a,b) => a !== b); },
+        lt  : function(){ return reduceOp(arguments, (a,b) => a  <  b); },
+        gt  : function(){ return reduceOp(arguments, (a,b) => a  >  b); },
+        lte : function(){ return reduceOp(arguments, (a,b) => a  <= b); },
+        gte : function(){ return reduceOp(arguments, (a,b) => a  >= b); },
+        and : function(){ return reduceOp(arguments, (a,b) => a  && b); },
+        or  : function(){ return reduceOp(arguments, (a,b) => a  || b); },
+    },
     layoutsDir: __dirname + '/views',
     extname: 'hbs'
 }));
@@ -35,25 +51,28 @@ app.listen(port, () => {
 
 
 app.get('/', (req, res) => {
-    res.render('main',{data:data})
+    res.render('main',{router:0,data:data})
 })
 app.get('/forooshgah', (req, res) =>{
-    res.render('main',{})
+    res.render('main',{router:1,data:data})
 })
 app.get('/modiriatMahsool', (req, res) =>{
-    res.render('main',{})
+    res.render('main',{router:2,data:data})
 })
 app.get('/akharinMahsool', (req, res) =>{
-    res.render('main',{})
+    res.render('main',{router:3,data:data})
 })
 app.get('/blog', (req, res) =>{
-    res.render('main',{})
+    res.render('main',{router:4})
 })
 app.get('/safheha', (req, res) => {
-    res.render('main',{})
+    res.render('main',{router:5})
 })
 app.get('/ertebatBaMa', (req, res) => {
-    res.render('main',{})
+    res.render('main',{router:6})
+})
+app.get('/search', (req, res) => {
+    res.render('main',{router:7})
 })
 
 // app.get('/manageitem', (req, res) =>res.render('manageitem'))
