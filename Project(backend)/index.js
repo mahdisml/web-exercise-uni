@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const handlebars = require('express-handlebars');
 const fs = require("fs");
 let data;
-
+let lastRoute;
 fs.readFile(path.join(__dirname, '/items.json'), (err, newData) => {
     if (err) throw err;
     data = JSON.parse(newData);
@@ -22,8 +22,8 @@ function updateJson(){
 }
 const reduceOp = function(args, reducer){
     args = Array.from(args);
-    args.pop(); // => options
-    var first = args.shift();
+    args.pop();
+    let first = args.shift();
     return args.reduce(reducer, first);
 };
 
@@ -51,30 +51,55 @@ app.listen(port, () => {
 
 
 app.get('/', (req, res) => {
-    res.render('main',{router:0,data:data})
+    lastRoute = 0
+    res.render('main',{router:0,data:data,submit : function (){
+            data.items.push({
+                name: "ساعت درجه 1",
+                price: 25,
+                img: "images/watch12.jpg"
+            })
+            updateJson()
+        }})
 })
 app.get('/forooshgah', (req, res) =>{
+    lastRoute = 1
     res.render('main',{router:1,data:data})
 })
 app.get('/modiriatMahsool', (req, res) =>{
+    lastRoute = 2
     res.render('main',{router:2,data:data})
 })
 app.get('/akharinMahsool', (req, res) =>{
+    lastRoute = 3
     res.render('main',{router:3,data:data})
 })
 app.get('/blog', (req, res) =>{
+    lastRoute = 4
     res.render('main',{router:4})
 })
 app.get('/safheha', (req, res) => {
+    lastRoute = 5
     res.render('main',{router:5})
 })
 app.get('/ertebatBaMa', (req, res) => {
+    lastRoute = 6
     res.render('main',{router:6})
 })
 app.get('/search', (req, res) => {
+    lastRoute = 7
     res.render('main',{router:7})
 })
 
+app.get('/additem', (req, res) => {
+    data.items.push({
+        name: "ساعت درجه 1",
+        price: 25,
+        img: "images/watch12.jpg"
+    })
+    updateJson()
+    res.render('main',{router:1,data:data})
+    //res.render('main',{router:lastRoute})
+})
 // app.get('/manageitem', (req, res) =>res.render('manageitem'))
 // app.post('/additem', (req, res) => {
 //     let lid =

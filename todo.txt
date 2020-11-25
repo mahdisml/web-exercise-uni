@@ -1,7 +1,7 @@
 hazf
 add
-virayesh
-search
+()virayesh
+()search
 blog
 safheha
 ertebat ba ma
