@@ -89,6 +89,11 @@ app.get('/search', (req, res) => {
     lastRoute = 7
     res.render('main',{router:7})
 })
+app.get('/remove-:id', (req, res) => {
+    data.items =  data.items.filter(it => it.id !== parseInt(req.params.id));
+    updateJson()
+    res.render('main',{router:2,data:data})
+})
 
 app.get('/additem', (req, res) => {
     data.items.push({
@@ -97,8 +102,7 @@ app.get('/additem', (req, res) => {
         img: "images/watch12.jpg"
     })
     updateJson()
-    res.render('main',{router:1,data:data})
-    //res.render('main',{router:lastRoute})
+    res.render('main',{router:2,data:data})
 })
 // app.get('/manageitem', (req, res) =>res.render('manageitem'))
 // app.post('/additem', (req, res) => {

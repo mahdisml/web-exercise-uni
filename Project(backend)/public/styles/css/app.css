@@ -449,6 +449,24 @@ html, body {
   margin-left: 7vw;
 }
 
+.popularItems-items__item-remove {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  overflow: visible;
+  width: 100%;
+  height: auto;
+}
+.popularItems-items__item-remove a {
+  font-family: VazirBold, sans-serif;
+  font-size: 25px;
+  font-weight: normal;
+  color: #ff0000;
+  text-decoration: none;
+}
+
 .popularItems__title-1 {
   font-family: VazirBold, sans-serif;
   font-size: 25px;
@@ -578,6 +596,26 @@ html, body {
 }
 .content5-button p {
   margin-left: 50px;
+}
+
+.content5-button-2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  overflow: hidden;
+  height: 5rem;
+  background-color: #f81e1e;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  margin-top: 50px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.content5-button-2 p {
+  margin-left: 10px;
 }
 
 .content5-left {
@@ -715,7 +753,7 @@ html, body {
   height: 2.5em;
 }
 .attributesWrapper .attributesWrapper__method .attributesWrapper__method__description {
-  color: #d3d1d1;
+  color: #eeeeee;
 }
 
 @media only screen and (max-width: 927px) {

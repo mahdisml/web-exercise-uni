@@ -86,8 +86,12 @@
                 <p class="popularItems__title-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
             </div>
             <div class="popularItems-items">
+                {{#if (eq router 2)}}
                 {{#each data.items}}
                     <div class="popularItems-items__item">
+                        <div class="popularItems-items__item-remove">
+                            <a href="/remove-{{this.id}}">X</a>
+                        </div>
                         <img class="popularItems-items__image" src="{{this.img}}" alt="popularItems items image">
                         <div class="popularItems-items__info">
                             <p class="popularItems-items__item-p1">{{this.name}}</p>
@@ -95,8 +99,32 @@
                         </div>
                     </div>
                 {{/each}}
+                {{/if}}
+                {{#if (ne router 2)}}
+                    {{#each data.items}}
+                        <div class="popularItems-items__item">
+                            <img class="popularItems-items__image" src="{{this.img}}" alt="popularItems items image">
+                            <div class="popularItems-items__info">
+                                <p class="popularItems-items__item-p1">{{this.name}}</p>
+                                <p class="popularItems-items__item-p2">{{this.price}} هزار تومان</p>
+                            </div>
+                        </div>
+                    {{/each}}
+                {{/if}}
             </div>
-        <a class="content4-lastbutton" href="/#">دیدن محصولات بیشتر</a>
+        {{#if (or (eq router 0) (eq router 1))}}
+            <div class="content5-buttonDiv">
+                <a class="content5-button-2" href="/modiriatMahsool">
+                    <p>
+                        مدیریت محصول (حذف و اضافه کردن)
+                    </p>
+                    <img class="content5-left" src="/images/2.svg" alt="left arrow">
+                </a>
+            </div>
+        {{/if }}
+    {{#if (or (eq router 0) (eq router 2))}}
+        <a class="content4-lastbutton" href="/forooshgah">دیدن محصولات بیشتر</a>
+    {{/if}}
     </section>
 {{/if}}
 {{#if (eq router 0)}}

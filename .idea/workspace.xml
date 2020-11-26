@@ -22,14 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="start of new Project !">
+    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="project is 65% done !">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project(backend)/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project(backend)/items.json" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/items.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project(backend)/itemsDefault.json" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/itemsDefault.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project(backend)/public/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/public/styles/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project(backend)/public/styles/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/public/styles/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project(backend)/public/styles/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/public/styles/css/app.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project(backend)/views/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/views/main.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +174,7 @@
       <workItem from="1605052733276" duration="8000" />
       <workItem from="1605052896064" duration="4654000" />
       <workItem from="1606243727045" duration="14000" />
-      <workItem from="1606244230238" duration="19930000" />
+      <workItem from="1606244230238" duration="31214000" />
     </task>
     <task id="LOCAL-00001" summary="first style">
       <created>1602265611155</created>
@@ -329,7 +330,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606322249346</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="project is 60% done !">
+      <created>1606328754454</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1606328754454</updated>
+    </task>
+    <task id="LOCAL-00024" summary="project is 65% done !">
+      <created>1606337399814</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1606337399814</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,14 +383,15 @@
     <MESSAGE value="PLEASE HELP !!!!!!" />
     <MESSAGE value="VICTORY !" />
     <MESSAGE value="start of new Project !" />
-    <option name="LAST_COMMIT_MESSAGE" value="start of new Project !" />
+    <MESSAGE value="project is 60% done !" />
+    <MESSAGE value="project is 65% done !" />
+    <option name="LAST_COMMIT_MESSAGE" value="project is 65% done !" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
-        <watch expression="jam(i)" language="JavaScript" />
-        <watch expression="allData" language="JavaScript" />
-        <watch expression="allDataNot" language="JavaScript" />
+        <watch expression="parseInt(e.id)" language="JavaScript" />
+        <watch expression="req.params.id" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
