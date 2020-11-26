@@ -897,3 +897,48 @@ footer{
   margin-right: 5px;
 }
 
+.addContent{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  overflow: visible;
+  width: auto;
+  height: auto;
+
+  margin-right: 7vw;
+  margin-left: 7vw;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  border: solid 2px $mainColor;
+  padding: 50px;
+  font-family: Vazir, sans-serif;
+
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: $mainColor;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: $mainColor;
+}
+

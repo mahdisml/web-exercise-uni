@@ -89,29 +89,24 @@ app.get('/search', (req, res) => {
     lastRoute = 7
     res.render('main',{router:7})
 })
-app.get('/remove-:id', (req, res) => {
+app.get('/modiriatMahsool-:id', (req, res) => {
     data.items =  data.items.filter(it => it.id !== parseInt(req.params.id));
     updateJson()
     res.render('main',{router:2,data:data})
 })
 
-app.get('/additem', (req, res) => {
+app.post('/modiriatMahsool',(req, res) => {
+    let aks = "images/watch12.jpg";
+    if (parseInt(req.body.aks) === 1)
+        aks = "images/watch10.jpg";
+    if (parseInt(req.body.aks) === 2)
+        aks = "images/watch11.jpg";
     data.items.push({
-        name: "ساعت درجه 1",
-        price: 25,
-        img: "images/watch12.jpg"
+        id: Math.floor(Math.random() * 999999),
+        name: req.body.name,
+        price: parseInt(req.body.gheymat),
+        img: aks
     })
     updateJson()
     res.render('main',{router:2,data:data})
 })
-// app.get('/manageitem', (req, res) =>res.render('manageitem'))
-// app.post('/additem', (req, res) => {
-//     let lid =
-//         data.push({
-//             id: data[data.length - 1].id + 1,
-//             name: req.body.name,
-//             cost: parseInt(req.body.price)
-//         })
-//     console.log(data)
-//     res.render('index', data)
-// })

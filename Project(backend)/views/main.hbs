@@ -67,6 +67,29 @@
         </div>
     </section>
 {{/if }}
+
+{{#if (eq router 2)}}
+<section class="addContent">
+    <form action="/modiriatMahsool" method="POST">
+        <label for="name">نام</label>
+        <input type="text" id="name" name="name" >
+
+        <label for="gheymat">قیمت</label>
+        <input type="text" id="gheymat" name="gheymat">
+
+        <label for="aks">عکس</label>
+        <select id="aks" name="aks">
+            <option value="1">عکس 1</option>
+            <option value="2">عکس 2</option>
+            <option value="3">عکس 3</option>
+        </select>
+
+        <input type="submit" value="اضافه کردن">
+    </form>
+</section>
+{{/if}}
+
+
 {{#if (eq router 0)}}
     <section class="content3">
         <div class="gallery">
@@ -90,7 +113,7 @@
                 {{#each data.items}}
                     <div class="popularItems-items__item">
                         <div class="popularItems-items__item-remove">
-                            <a href="/remove-{{this.id}}">X</a>
+                            <a href="/modiriatMahsool-{{this.id}}">X</a>
                         </div>
                         <img class="popularItems-items__image" src="{{this.img}}" alt="popularItems items image">
                         <div class="popularItems-items__info">

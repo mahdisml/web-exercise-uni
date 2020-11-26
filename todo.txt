@@ -1,5 +1,3 @@
-hazf
-add
 ()virayesh
 ()search
 blog
