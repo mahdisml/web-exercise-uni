@@ -22,15 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="project is 70% done !">
-      <change afterPath="$PROJECT_DIR$/Project(backend)/سازندگان.txt" afterDir="false" />
+    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="project is 90% done !">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project(backend)/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project(backend)/public/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/public/styles/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project(backend)/public/styles/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/public/styles/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project(backend)/public/styles/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/public/styles/css/app.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project(backend)/views/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/views/main.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project(backend)/views/manageitem.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +172,7 @@
       <workItem from="1605052733276" duration="8000" />
       <workItem from="1605052896064" duration="4654000" />
       <workItem from="1606243727045" duration="14000" />
-      <workItem from="1606244230238" duration="35241000" />
+      <workItem from="1606244230238" duration="36919000" />
     </task>
     <task id="LOCAL-00001" summary="first style">
       <created>1602265611155</created>
@@ -352,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606374262723</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="project is 90% done !">
+      <created>1606380180475</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1606380180475</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +398,8 @@
     <MESSAGE value="project is 60% done !" />
     <MESSAGE value="project is 65% done !" />
     <MESSAGE value="project is 70% done !" />
-    <option name="LAST_COMMIT_MESSAGE" value="project is 70% done !" />
+    <MESSAGE value="project is 90% done !" />
+    <option name="LAST_COMMIT_MESSAGE" value="project is 90% done !" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

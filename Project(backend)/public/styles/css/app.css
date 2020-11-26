@@ -925,4 +925,33 @@ input[type=submit]:hover {
   background-color: #f81e1e;
 }
 
+.blog {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  overflow: visible;
+  width: auto;
+  height: auto;
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+
+.blog-body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  overflow: visible;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.blog-body p {
+  text-align: center;
+}
+
 /*# sourceMappingURL=app.css.map */
