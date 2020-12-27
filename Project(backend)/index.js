@@ -5,21 +5,28 @@ const port = 3000
 const bodyParser = require("body-parser");
 const handlebars = require('express-handlebars');
 const fs = require("fs");
-let data;
+
 let lastRoute;
-fs.readFile(path.join(__dirname, '/items.json'), (err, newData) => {
-    if (err) throw err;
-    data = JSON.parse(newData);
-    console.log(data);
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://mahdisml:smlkabirvapooya@cluster0.5hgds.mongodb.net/items?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+
+/*
+
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://mahdisml:smlkabirvapooya@cluster0.5hgds.mongodb.net/shop?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+
+client.connect(err => {
+    const collection = client.db("shop").collection("items");
+    // perform actions on the collection object
+    client.close();
+
 });
 
-function updateJson(){
-    let newData = JSON.stringify(data, null, 2);
-    fs.writeFile(path.join(__dirname, '/items.json'), newData, (err) => {
-        if (err) throw err;
-        console.log('Data written to file');
-    });
-}
+*/
+
+
 const reduceOp = function(args, reducer){
     args = Array.from(args);
     args.pop();
@@ -52,26 +59,31 @@ app.listen(port, () => {
 
 app.get('/', (req, res) => {
     lastRoute = 0
-    res.render('main',{router:0,data:data,submit : function (){
-            data.items.push({
-                name: "ساعت درجه 1",
-                price: 25,
-                img: "images/watch12.jpg"
-            })
-            updateJson()
-        }})
+    let loadedData = []
+    client.connect(err => {
+        const collection = client.db("shop").collection("items");
+        // perform actions on the collection object
+        collection.find().forEach(function (doc) {
+            loadedData.push(doc)
+        })
+        console.log(loadedData)
+        res.render('main',{router:0,data:loadedData})
+        client.close();
+
+    })
+
 })
 app.get('/forooshgah', (req, res) =>{
     lastRoute = 1
-    res.render('main',{router:1,data:data})
+    res.render('main',{router:1,data:collection.find()})
 })
 app.get('/modiriatMahsool', (req, res) =>{
     lastRoute = 2
-    res.render('main',{router:2,data:data})
+    res.render('main',{router:2,data:collection.find()})
 })
 app.get('/akharinMahsool', (req, res) =>{
     lastRoute = 3
-    res.render('main',{router:3,data:data})
+    res.render('main',{router:3,data:collection.find()})
 })
 app.get('/blog', (req, res) =>{
     lastRoute = 4
@@ -90,9 +102,18 @@ app.get('/search', (req, res) => {
     res.render('main',{router:7})
 })
 app.get('/modiriatMahsool-:id', (req, res) => {
-    data.items =  data.items.filter(it => it.id !== parseInt(req.params.id));
-    updateJson()
-    res.render('main',{router:2,data:data})
+
+    client.connect(err => {
+        const collection = client.db("shop").collection("items");
+        // perform actions on the collection object
+        collection.deleteOne({
+            _id:req.params._id
+        })
+        res.render('main',{router:2,data:collection.find()})
+        client.close();
+
+    });
+
 })
 
 app.post('/modiriatMahsool',(req, res) => {
@@ -101,12 +122,17 @@ app.post('/modiriatMahsool',(req, res) => {
         aks = "images/watch10.jpg";
     if (parseInt(req.body.aks) === 2)
         aks = "images/watch11.jpg";
-    data.items.push({
-        id: Math.floor(Math.random() * 999999),
-        name: req.body.name,
-        price: parseInt(req.body.gheymat),
-        img: aks
-    })
-    updateJson()
+
+    client.connect(err => {
+        const collection = client.db("shop").collection("items");
+        collection.insertOne({
+            name: req.body.name,
+            price: parseInt(req.body.gheymat),
+            img: aks
+        })
+        // perform actions on the collection object
+        client.close();
+
+    });
     res.render('main',{router:2,data:data})
 })

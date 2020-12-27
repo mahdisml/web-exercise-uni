@@ -1,0 +1,13 @@
+[
+  {"_id":{"$oid":"5fe7e3e659c4f0f781ed374e"},"name":"ساعت درجه 1","price":{"$numberInt":"100"},"img":"images/watch12.jpg"}
+,
+  {"_id":{"$oid":"5fe7e43159c4f0f781ed374f"},"name":"ساعت درجه 2","price":{"$numberInt":"90"},"img":"images/watch11.jpg"}
+,
+  {"_id":{"$oid":"5fe7e44f59c4f0f781ed3750"},"name":"ساعت درجه 3","price":{"$numberInt":"80"},"img":"images/watch10.jpg"}
+,
+  {"_id":{"$oid":"5fe7e46559c4f0f781ed3751"},"name":"ساعت درجه 4","price":{"$numberInt":"70"},"img":"images/watch10.jpg"}
+,
+  {"_id":{"$oid":"5fe7e46f59c4f0f781ed3752"},"name":"ساعت درجه 5","price":{"$numberInt":"60"},"img":"images/watch12.jpg"}
+,
+  {"_id":{"$oid":"5fe7e47b59c4f0f781ed3753"},"name":"ساعت درجه 6","price":{"$numberInt":"50"},"img":"images/watch11.jpg"}
+]
