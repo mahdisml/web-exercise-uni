@@ -110,10 +110,10 @@
             </div>
             <div class="popularItems-items">
                 {{#if (eq router 2)}}
-                {{#each data}}
+                {{#each data.items}}
                     <div class="popularItems-items__item">
                         <div class="popularItems-items__item-remove">
-                            <a href="/modiriatMahsool-{{this._id}}">X</a>
+                            <a href="/modiriatMahsool-{{this.id}}">X</a>
                         </div>
                         <img class="popularItems-items__image" src="{{this.img}}" alt="popularItems items image">
                         <div class="popularItems-items__info">
@@ -124,7 +124,7 @@
                 {{/each}}
                 {{/if}}
                 {{#if (ne router 2)}}
-                    {{#each data}}
+                    {{#each data.items}}
                         <div class="popularItems-items__item">
                             <img class="popularItems-items__image" src="{{this.img}}" alt="popularItems items image">
                             <div class="popularItems-items__info">

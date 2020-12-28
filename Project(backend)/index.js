@@ -5,11 +5,12 @@ const port = 3000
 const bodyParser = require("body-parser");
 const handlebars = require('express-handlebars');
 const fs = require("fs");
+const mongodb = require("mongodb");
 
 let lastRoute;
 const MongoClient = require('mongodb').MongoClient;
 const uri = "mongodb+srv://mahdisml:smlkabirvapooya@cluster0.5hgds.mongodb.net/items?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true });
+const client = new MongoClient(uri, { useNewUrlParser: true ,poolSize : 10});
 
 /*
 
@@ -18,7 +19,7 @@ const uri = "mongodb+srv://mahdisml:smlkabirvapooya@cluster0.5hgds.mongodb.net/s
 const client = new MongoClient(uri, { useNewUrlParser: true });
 
 client.connect(err => {
-    const collection = client.db("shop").collection("items");
+    const collection = client.db("shop", {returnNonCachedInstance : true}).collection("items");
     // perform actions on the collection object
     client.close();
 
@@ -59,31 +60,54 @@ app.listen(port, () => {
 
 app.get('/', (req, res) => {
     lastRoute = 0
-    let loadedData = []
     client.connect(err => {
-        const collection = client.db("shop").collection("items");
+        const collection = client.db("shop", {returnNonCachedInstance : true}).collection("items");
         // perform actions on the collection object
-        collection.find().forEach(function (doc) {
-            loadedData.push(doc)
+        collection.find().toArray((error, documents) => {
+            console.log(documents)
+            res.render('main',{router:0,data:documents})
+            client.close();
         })
-        console.log(loadedData)
-        res.render('main',{router:0,data:loadedData})
-        client.close();
-
     })
 
 })
 app.get('/forooshgah', (req, res) =>{
     lastRoute = 1
-    res.render('main',{router:1,data:collection.find()})
+    client.connect(err => {
+        const collection = client.db("shop", {returnNonCachedInstance : true}).collection("items");
+        // perform actions on the collection object
+        collection.find().toArray((error, documents) => {
+            console.log(documents)
+            res.render('main',{router:1,data:documents})
+            client.close();
+        })
+    })
+
 })
 app.get('/modiriatMahsool', (req, res) =>{
     lastRoute = 2
-    res.render('main',{router:2,data:collection.find()})
+    client.connect(err => {
+        const collection = client.db("shop", {returnNonCachedInstance : true }).collection("items");
+        // perform actions on the collection object
+        collection.find().toArray((error, documents) => {
+            console.log(documents)
+            res.render('main',{router:2,data:documents})
+            client.close();
+        })
+    })
+
 })
 app.get('/akharinMahsool', (req, res) =>{
     lastRoute = 3
-    res.render('main',{router:3,data:collection.find()})
+    client.connect(err => {
+        const collection = client.db("shop", {returnNonCachedInstance : true}).collection("items");
+        // perform actions on the collection object
+        collection.find().toArray((error, documents) => {
+            console.log(documents)
+            res.render('main',{router:3,data:documents})
+            client.close();
+        })
+    })
 })
 app.get('/blog', (req, res) =>{
     lastRoute = 4
@@ -104,15 +128,23 @@ app.get('/search', (req, res) => {
 app.get('/modiriatMahsool-:id', (req, res) => {
 
     client.connect(err => {
-        const collection = client.db("shop").collection("items");
+        const collection = client.db("shop", {returnNonCachedInstance : true}).collection("items");
         // perform actions on the collection object
-        collection.deleteOne({
-            _id:req.params._id
-        })
-        res.render('main',{router:2,data:collection.find()})
-        client.close();
 
-    });
+        collection.deleteOne({
+            _id: new mongodb.ObjectID(req.params.id)
+        },function (err) {
+
+            if(err) console.log(err);
+
+            collection.find().toArray((error, documents) => {
+                console.log(documents)
+                res.render('main',{router:2,data:documents})
+                client.close();
+            })
+        })
+
+    })
 
 })
 
@@ -124,15 +156,18 @@ app.post('/modiriatMahsool',(req, res) => {
         aks = "images/watch11.jpg";
 
     client.connect(err => {
-        const collection = client.db("shop").collection("items");
+        const collection = client.db("shop", {returnNonCachedInstance : true}).collection("items");
         collection.insertOne({
             name: req.body.name,
             price: parseInt(req.body.gheymat),
             img: aks
         })
         // perform actions on the collection object
-        client.close();
+        collection.find().toArray((error, documents) => {
+            console.log(documents)
+            res.render('main',{router:2,data:documents})
+            client.close();
+        })
 
     });
-    res.render('main',{router:2,data:data})
 })
