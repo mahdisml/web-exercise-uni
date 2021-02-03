@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/css/app.css">
 </head>
 <body dir="rtl">
+
 <header class="menuBar">
     <div class="logo">
         <p>
@@ -29,7 +30,7 @@
     </nav>
     <div class="buttons">
         <a href="/search"><img class="buttonsItem" src="/images/search.png" alt="search icon"/></a>
-        <a href="/modiriatMahsool"><img class="buttonsItem" src="/images/user.png" alt="user icon"/></a>
+        <a href="/user"><img class="buttonsItem" src="/images/user.png" alt="user icon"/></a>
         <a href="/forooshgah"><img class="buttonsItem" src="/images/shop.png" alt="shop icon"/></a>
     </div>
 </header>
@@ -87,6 +88,13 @@
         <input type="submit" value="اضافه کردن">
     </form>
 </section>
+<script>
+    let data = sessionStorage.getItem('login');
+    if (data === "1"){
+    }else{
+        window.location.href = '/user';
+    }
+</script>
 {{/if}}
 
 
@@ -267,6 +275,50 @@
 {{/if}}
 {{#if (eq router 7)}}
 
+{{/if}}
+
+{{#if (eq router 9)}}
+    <div class="blog-body">
+        <h2>
+            با موفقیت انجام شد
+        </h2>
+    </div>
+    <script>
+        sessionStorage.setItem('login', '1');
+    </script>
+{{/if}}
+{{#if (eq router 8)}}
+    <section class="addContent">
+        <form action="/userlogin">
+            <label for="name">نام کاربری</label>
+            <input type="text" id="name" name="name" >
+
+            <label for="pass">رمز عبور</label>
+            <input type="text" id="pass" name="pass">
+            <input id="login-button" type="submit" value="ورود">
+
+        </form>
+    </section>
+    <section class="addContent">
+        <form action="/usersignup">
+            <label for="name">نام کاربری</label>
+            <input type="text" id="name" name="name" >
+
+            <label for="pass">رمز عبور</label>
+            <input type="text" id="pass" name="pass">
+            <input id="signup-button" type="submit" value="ثبت نام">
+        </form>
+    </section>
+    <script>
+        document.getElementById("login-button").addEventListener("click", function() {
+            let data = sessionStorage.getItem('login');
+            if (data === '1'){
+                window.location.href = '...';
+            }else{
+                window.location.href = '...';
+            }
+        });
+    </script>
 {{/if}}
 <footer>
     <div class="footerWrapper">

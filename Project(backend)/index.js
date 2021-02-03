@@ -125,6 +125,40 @@ app.get('/search', (req, res) => {
     lastRoute = 7
     res.render('main',{router:7})
 })
+app.get('/user', (req, res) => {
+    lastRoute = 8
+    res.render('main',{router:8})
+})
+app.get('/usersignup', (req, res) => {
+    lastRoute = 9
+    client.connect(err => {
+        const collection = client.db("shop", {returnNonCachedInstance : true}).collection("users");
+
+        collection.insertOne({
+            name: req.query.name,
+            pass: req.query.pass
+        })
+        res.render('main',{router:9})
+        client.close();
+    });
+})
+app.get('/userlogin', (req, res) => {
+    lastRoute = 9
+    client.connect(err => {
+        const collection = client.db("shop", {returnNonCachedInstance : true}).collection("users");
+        collection.findOne({name: req.query.name, pass: req.query.pass}, function(err, result) {
+            if (err) throw err;
+            if (result !== null){
+                res.render('main',{router:9})
+                client.close();
+            }else {
+                lastRoute = 8
+                res.render('main',{router:8})
+            }
+
+        });
+    });
+})
 app.get('/modiriatMahsool-:id', (req, res) => {
 
     client.connect(err => {

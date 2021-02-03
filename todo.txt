@@ -1,2 +1,8 @@
-()virayesh
-()search
+document.getElementById("user-button").addEventListener("click", function() {
+        let data = sessionStorage.getItem('login');
+        if (data === "1"){
+            window.location.href = '...';
+        }else{
+            window.location.href = '...';
+        }
+    });
