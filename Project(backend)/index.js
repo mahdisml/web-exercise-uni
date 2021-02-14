@@ -11,7 +11,9 @@ let lastRoute;
 const MongoClient = require('mongodb').MongoClient;
 const uri = "mongodb+srv://mahdisml:smlkabirvapooya@cluster0.5hgds.mongodb.net/items?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true ,poolSize : 10});
-
+const jwt = require('jsonwebtoken');
+const secret = 'shhhhh'
+const payload = 'thisIsTrue'
 /*
 
 const MongoClient = require('mongodb').MongoClient;
@@ -149,7 +151,12 @@ app.get('/userlogin', (req, res) => {
         collection.findOne({name: req.query.name, pass: req.query.pass}, function(err, result) {
             if (err) throw err;
             if (result !== null){
-                res.render('main',{router:9})
+
+
+                //token
+                var token = jwt.sign({ isThisTrue: payload }, secret);
+
+                res.render('main',{router:9,tk : token})
                 client.close();
             }else {
                 lastRoute = 8
@@ -159,26 +166,55 @@ app.get('/userlogin', (req, res) => {
         });
     });
 })
-app.get('/modiriatMahsool-:id', (req, res) => {
+app.get('/modiriatMahsool-:id-:token', (req, res) => {
 
-    client.connect(err => {
-        const collection = client.db("shop", {returnNonCachedInstance : true}).collection("items");
-        // perform actions on the collection object
+    try {
+        var decoded = jwt.verify(req.params.token, secret);
+        if (decoded.isThisTrue === payload) {
+            client.connect(err => {
+                const collection = client.db("shop", {returnNonCachedInstance: true}).collection("items");
+                // perform actions on the collection object
 
-        collection.deleteOne({
-            _id: new mongodb.ObjectID(req.params.id)
-        },function (err) {
+                collection.deleteOne({
+                    _id: new mongodb.ObjectID(req.params.id)
+                }, function (err) {
 
-            if(err) console.log(err);
+                    if (err) console.log(err);
 
+                    collection.find().toArray((error, documents) => {
+                        console.log(documents)
+                        res.render('main', {router: 2, data: documents})
+                        client.close();
+                    })
+                })
+
+            })
+        } else {
+            lastRoute = 2
+            client.connect(err => {
+                const collection = client.db("shop", {returnNonCachedInstance: true}).collection("items");
+                // perform actions on the collection object
+                collection.find().toArray((error, documents) => {
+                    console.log(documents)
+                    res.render('main', {router: 2, data: documents})
+                    client.close();
+                })
+            })
+        }
+    } catch (e) {
+        lastRoute = 2
+        client.connect(err => {
+            const collection = client.db("shop", {returnNonCachedInstance : true }).collection("items");
+            // perform actions on the collection object
             collection.find().toArray((error, documents) => {
                 console.log(documents)
                 res.render('main',{router:2,data:documents})
                 client.close();
             })
         })
+    }
 
-    })
+
 
 })
 
@@ -188,20 +224,47 @@ app.post('/modiriatMahsool',(req, res) => {
         aks = "images/watch10.jpg";
     if (parseInt(req.body.aks) === 2)
         aks = "images/watch11.jpg";
+    try {
+        var decoded = jwt.verify(req.body.token, secret);
+        if (decoded.isThisTrue === payload) {
+            client.connect(err => {
+                const collection = client.db("shop", {returnNonCachedInstance: true}).collection("items");
+                collection.insertOne({
+                    name: req.body.name,
+                    price: parseInt(req.body.gheymat),
+                    img: aks
+                })
+                // perform actions on the collection object
+                collection.find().toArray((error, documents) => {
+                    console.log(documents)
+                    res.render('main', {router: 2, data: documents})
+                    client.close();
+                })
 
-    client.connect(err => {
-        const collection = client.db("shop", {returnNonCachedInstance : true}).collection("items");
-        collection.insertOne({
-            name: req.body.name,
-            price: parseInt(req.body.gheymat),
-            img: aks
+            });
+        }else{
+            lastRoute = 2
+            client.connect(err => {
+                const collection = client.db("shop", {returnNonCachedInstance : true }).collection("items");
+                // perform actions on the collection object
+                collection.find().toArray((error, documents) => {
+                    console.log(documents)
+                    res.render('main',{router:2,data:documents})
+                    client.close();
+                })
+            })
+        }
+    } catch (e) {
+        lastRoute = 2
+        client.connect(err => {
+            const collection = client.db("shop", {returnNonCachedInstance : true }).collection("items");
+            // perform actions on the collection object
+            collection.find().toArray((error, documents) => {
+                console.log(documents)
+                res.render('main',{router:2,data:documents})
+                client.close();
+            })
         })
-        // perform actions on the collection object
-        collection.find().toArray((error, documents) => {
-            console.log(documents)
-            res.render('main',{router:2,data:documents})
-            client.close();
-        })
+    }
 
-    });
 })

@@ -74,7 +74,8 @@
     <form action="/modiriatMahsool" method="POST">
         <label for="name">نام</label>
         <input type="text" id="name" name="name" >
-
+        <label for="token">توکن (نمایش فقط برای روند توسعه)</label>
+        <input type="text" id="token" name="token" >
         <label for="gheymat">قیمت</label>
         <input type="text" id="gheymat" name="gheymat">
 
@@ -91,9 +92,12 @@
 <script>
     let data = sessionStorage.getItem('login');
     if (data === "1"){
+        let token = sessionStorage.getItem('tk');
+        document.getElementById('token').value = token;
     }else{
         window.location.href = '/user';
     }
+
 </script>
 {{/if}}
 
@@ -121,7 +125,7 @@
                 {{#each data}}
                     <div class="popularItems-items__item">
                         <div class="popularItems-items__item-remove">
-                            <a href="/modiriatMahsool-{{this._id}}">X</a>
+                            <a class="fixLink" href="/modiriatMahsool-{{this._id}}">X</a>
                         </div>
                         <img class="popularItems-items__image" src="{{this.img}}" alt="popularItems items image">
                         <div class="popularItems-items__info">
@@ -129,7 +133,14 @@
                             <p class="popularItems-items__item-p2">{{this.price}} هزار تومان</p>
                         </div>
                     </div>
+
                 {{/each}}
+                    <script>
+                        var elements = document.getElementsByClassName("fixLink");
+                        for(var i=0; i<elements.length; i++) {
+                            elements[i].href = elements[i].href + '-' + sessionStorage.getItem('tk')
+                        }
+                    </script>
                 {{/if}}
                 {{#if (ne router 2)}}
                     {{#each data}}
@@ -283,8 +294,10 @@
             با موفقیت انجام شد
         </h2>
     </div>
+    <div id="hiddenToken" hidden>{{tk}}</div>
     <script>
         sessionStorage.setItem('login', '1');
+        sessionStorage.setItem('tk', document.getElementById('hiddenToken').innerText);
     </script>
 {{/if}}
 {{#if (eq router 8)}}

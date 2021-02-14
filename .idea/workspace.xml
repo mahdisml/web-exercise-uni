@@ -22,11 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="bug is everywhere 2">
+    <list default="true" id="2f70705e-b4d7-47dd-9261-3c75c66f4aba" name="Default Changelist" comment="done ! completely">
+      <change afterPath="$PROJECT_DIR$/emr/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project(backend)/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project(backend)/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project(backend)/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project(backend)/views/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/Project(backend)/views/main.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +42,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -180,7 +183,10 @@
       <workItem from="1609098770409" duration="6844000" />
       <workItem from="1609169634173" duration="5648000" />
       <workItem from="1612110965747" duration="3445000" />
-      <workItem from="1612252591351" duration="14799000" />
+      <workItem from="1612252591351" duration="16537000" />
+      <workItem from="1612323376055" duration="2533000" />
+      <workItem from="1612438720269" duration="3192000" />
+      <workItem from="1613309077227" duration="7075000" />
     </task>
     <task id="LOCAL-00001" summary="first style">
       <created>1602265611155</created>
@@ -370,7 +376,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۲۷" />
       <updated>1609035635707</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL‎۰۰۰۲۸" summary="done ! completely">
+      <created>1612318717895</created>
+      <option name="number" value="LOCAL‎۰۰۰۲۸" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۲۸" />
+      <updated>1612318717895</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +401,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first series" />
     <MESSAGE value="series two" />
     <MESSAGE value="khak bar saresh beshe" />
     <MESSAGE value="js is shit" />
@@ -414,7 +425,8 @@
     <MESSAGE value="project is 90% done !" />
     <MESSAGE value="bug is everywhere" />
     <MESSAGE value="bug is everywhere 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug is everywhere 2" />
+    <MESSAGE value="done ! completely" />
+    <option name="LAST_COMMIT_MESSAGE" value="done ! completely" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
